@@ -84,8 +84,8 @@ const About = () => {
         </div>
       </div>
       <div className="icons-list">
-        {data.map((data) => (
-          <IconsList data={data} />
+        {data.map((data, key) => (
+          <IconsList key={key} data={data} />
         ))}
       </div>
     </div>

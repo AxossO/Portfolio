@@ -1,10 +1,13 @@
+import { AnimatePresence } from "framer-motion";
 import Home from "./pages/Home";
 import "./styles/App.scss";
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <AnimatePresence mode="wait">
+        <Home />
+      </AnimatePresence>
     </div>
   );
 }
