@@ -7,9 +7,16 @@ const Projects = () => {
   return (
     <div className="projects">
       <div className="project-container">
+        <div className="title">
+          <h2>&lt;PROJECTS&gt;</h2>
+        </div>
+
         {projectInfo.map((data, key) => (
           <Project data={data} key={key} />
         ))}
+      </div>
+      <div className="end-title">
+        <h2>&lt;PROJECTS&gt;</h2>
       </div>
     </div>
   );

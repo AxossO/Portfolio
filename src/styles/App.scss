@@ -28,11 +28,14 @@ li {
   height: 100%;
   max-width: 10rem;
   background-color: #191919;
+  z-index: 88;
+  transition: 1s ease-out;
 
   .logo {
-    min-height: 32vh;
+    min-height: 28vh;
     padding: 2rem 1rem;
     font-size: 1.7rem;
+    line-height: 1.2;
   }
   .nav-list {
     position: relative;
@@ -42,6 +45,7 @@ li {
       text-align: center;
       li {
         cursor: pointer;
+        border-top: 1px solid #ddd;
       }
     }
     .nav-social {
@@ -63,9 +67,10 @@ li {
   display: flex;
   align-items: center;
   padding-left: 1.5rem;
+  position: relative;
   .hello {
     font-size: 3rem;
-    line-height: 45px;
+    line-height: 0.8;
     letter-spacing: -3px;
     position: relative;
     width: auto;
@@ -198,41 +203,54 @@ li {
 
 .projects {
   padding: 5rem;
+  position: relative;
+
   .project-container {
-    grid-gap: 5rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    height: auto;
-    width: 100rem;
-    align-items: center;
-    padding: 0rem 5rem;
+    // grid-gap: 5rem;
+    // display: grid;
+    // gap: 1rem;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: auto auto;
+    // height: auto;
+    // align-items: center;
+    // padding: 0rem 5rem;
+    position: relative;
     .project {
       display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      height: 25rem;
-      border-radius: 1rem;
-      text-align: center;
-      padding: 0rem 5rem;
+      margin-bottom: 5rem;
+      justify-content: center;
       .project-text {
-        text-align: center;
-        flex-basis: 45%;
-        padding: 1rem;
+        // text-align: center;
+        // padding: 1rem;
+        // justify-content: flex-start;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: flex-start;
+        // padding: 0rem 2rem;
+        .descripton {
+          padding: 2rem;
+
+          p {
+            max-width: 15rem;
+            margin: 0 auto;
+            font-size: 1rem;
+            min-height: 25vh;
+            line-height: 150%;
+            letter-spacing: 1px;
+            font-family: "Inter", sans-serif;
+          }
+        }
         h3 {
+          padding: 0rem 2rem;
+
           margin-bottom: 1rem;
-          font-size: 1.7rem;
+          font-size: 1.2rem;
         }
-        p {
-          max-width: 25rem;
-          margin: 0 auto;
-        }
+
         .prog-text,
         .icon {
           display: flex;
           margin-top: 2rem;
-
           justify-content: center;
           align-items: center;
           gap: 1rem;
@@ -250,14 +268,87 @@ li {
 }
 
 .project-video {
-  flex-basis: 45%;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-  max-height: 25rem;
-  width: 100%;
-  overflow: hidden;
+  max-width: 40rem;
+  height: 30rem;
+  border-radius: 20px;
   video {
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+}
+.hide {
+  overflow: hidden;
+}
+.right-nav-contant {
+  .box {
+    display: flex;
+    // background-color: #5f6673;
+    align-items: center;
+    transform: translateX(-70%);
+    justify-content: flex-end;
+    padding: 10px 0rem;
+    gap: 1rem;
+    &:hover {
+      transform: translateX(0%);
+      transition: 0.8s ease-out;
+      padding-right: 1rem;
+    }
+    h4 {
+      font-size: 1.2rem;
+    }
+    svg {
+      border: 1px solid black;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  .end-title {
+    margin-top: 5rem;
+  }
+}
+
+.toggle {
+  top: 0;
+  position: absolute;
+}
+
+.visible {
+  transform: translateX(-300%);
+  transition: 1s ease-out;
+  display: block !important;
+}
+@media screen and (max-width: 510px) {
+  .hello {
+    font-size: 1.7rem !important;
+    text-align: center;
+  }
+  .content {
+    padding: 2rem !important;
+  }
+  .toggle {
+    position: absolute;
+    right: 0;
+  }
+}
+@media screen and (max-width: 890px) {
+  .nav {
+    display: none;
+    transform: translateX(0);
+    transition: 1s ease-out;
+  }
+  .content {
+    padding: 5rem 5rem;
+    .hello {
+      font-size: 2rem;
+      text-align: center;
+      flex: 1;
+    }
   }
 }

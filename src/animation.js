@@ -26,6 +26,28 @@ export const pageAnimation = {
   },
 };
 
+export const titleAnime = {
+  hidden: {
+    y: 200,
+  },
+  show: {
+    y: 0,
+    transition: { duration: 0.75, ease: "easeOut" },
+  },
+};
+export const fade = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.75,
+      ease: "easeOut",
+    },
+  },
+};
+
 export const iconLineAnimate = {
   hidden: {
     opacity: 0,
@@ -38,6 +60,25 @@ export const iconLineAnimate = {
     width: "100%",
     left: "0%",
     right: "100%",
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
+export const lineSkillsAnimate = {
+  hidden: {
+    opacity: 0,
+    width: "0",
+    height: "0",
+    transition: {
+      duration: 0.75,
+    },
+  },
+  show: {
+    opacity: 1,
+    height: "1rem",
+    width: "[data-progress]",
     transition: {
       duration: 1,
     },

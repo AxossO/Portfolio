@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Utli } from "../utli";
 import IconsList from "./IconsList";
+import { motion, useInView } from "framer-motion";
+import { lineSkillsAnimate } from "../animation";
 const About = () => {
   const [data, setData] = useState(Utli);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { margin: "1px 0px 0px 0px" });
   return (
     <div className="about">
       <div className="about-container">
@@ -44,41 +48,57 @@ const About = () => {
           <div className="skills">
             <h2>HTML</h2>
             <div className="prog">
-              <div
+              <motion.div
+                ref={ref}
+                initial="hidden"
+                animate={isInView ? "show" : "hidden"}
+                variants={lineSkillsAnimate}
                 style={{ width: "90%" }}
                 data-progress="90%"
                 className="line"
-              ></div>
+              ></motion.div>
             </div>
           </div>
           <div className="skills">
             <h2>CSS</h2>
             <div className="prog">
-              <div
+              <motion.div
+                ref={ref}
+                initial="hidden"
+                animate={isInView ? "show" : "hidden"}
+                variants={lineSkillsAnimate}
                 style={{ width: "90%" }}
                 data-progress="90%"
                 className="line"
-              ></div>
+              ></motion.div>
             </div>
           </div>
           <div className="skills">
             <h2>Javascript</h2>
             <div className="prog">
-              <div
+              <motion.div
+                ref={ref}
+                initial="hidden"
+                animate={isInView ? "show" : "hidden"}
+                variants={lineSkillsAnimate}
                 style={{ width: "40%" }}
                 data-progress="40%"
                 className="line"
-              ></div>
+              ></motion.div>
             </div>
           </div>
           <div className="skills">
             <h2>JS Skills</h2>
             <div className="prog">
-              <div
+              <motion.div
+                ref={ref}
+                initial="hidden"
+                animate={isInView ? "show" : "hidden"}
+                variants={lineSkillsAnimate}
                 style={{ width: "65%" }}
                 data-progress="65%"
                 className="line"
-              ></div>
+              ></motion.div>
             </div>
           </div>
         </div>

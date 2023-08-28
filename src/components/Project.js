@@ -1,5 +1,7 @@
+import { useInView } from "framer-motion";
 import React, { useRef, useState } from "react";
-
+import { motion } from "framer-motion";
+import { fade } from "../animation";
 const Project = ({ data }) => {
   const [isHovered, setIsHovered] = useState(false);
   const videoRef = useRef(null);
@@ -13,9 +15,16 @@ const Project = ({ data }) => {
     setIsHovered(false);
     videoRef.current.pause();
   };
-
+  const ref = useRef(null);
+  const isInView = useInView(ref, { margin: "1px 0px 0px 0px" });
   return (
-    <div className="project">
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={isInView ? "show" : "hidden"}
+      variants={fade}
+      className="project"
+    >
       <div
         className="project-video"
         onMouseEnter={handleMouseEnter}
@@ -27,7 +36,9 @@ const Project = ({ data }) => {
       </div>
       <div className="project-text">
         <h3>{data.title}</h3>
-        <p>{data.description}</p>
+        <div className="descripton">
+          <p>{data.description}</p>
+        </div>
         <div className="prog-text">
           <h4>{data.progLang1}</h4>
           <h4>{data.progLang2}</h4>
@@ -73,7 +84,7 @@ const Project = ({ data }) => {
           <div>Live Demo</div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
