@@ -34,8 +34,12 @@ li {
   .logo {
     min-height: 28vh;
     padding: 2rem 1rem;
-    font-size: 1.7rem;
     line-height: 1.2;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   .nav-list {
     position: relative;

@@ -8,7 +8,7 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 
 const Home = () => {
-  const [turnOn, setTurnOn] = useState(false);
+  const [turnOn, setTurnOn] = useState(true);
 
   return (
     <motion.div

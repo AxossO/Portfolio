@@ -5,7 +5,9 @@ const Nav = ({ turnOn }) => {
     <div className={`nav ${!turnOn ? "visible" : ""}`}>
       <div className="nav-list">
         <div className="logo">
-          <motion.div>How To Center A Div?</motion.div>
+          <motion.div>
+            How To Center A <span>Div?</span>
+          </motion.div>
         </div>
         <div className="nav-container">
           <ul>
