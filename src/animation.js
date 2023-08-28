@@ -78,7 +78,7 @@ export const lineSkillsAnimate = {
   show: {
     opacity: 1,
     height: "1rem",
-    width: "[data-progress]",
+    width: "60%",
     transition: {
       duration: 1,
     },

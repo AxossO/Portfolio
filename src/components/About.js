@@ -7,6 +7,7 @@ const About = () => {
   const [data, setData] = useState(Utli);
   const ref = useRef(null);
   const isInView = useInView(ref, { margin: "1px 0px 0px 0px" });
+
   return (
     <div className="about">
       <div className="about-container">
