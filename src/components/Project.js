@@ -1,8 +1,8 @@
 import { useInView } from "framer-motion";
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { fade } from "../animation";
-const Project = ({ data }) => {
+import { projectAnimate } from "../animation";
+const Project = ({ proj }) => {
   const [isHovered, setIsHovered] = useState(false);
   const videoRef = useRef(null);
 
@@ -22,7 +22,7 @@ const Project = ({ data }) => {
       ref={ref}
       initial="hidden"
       animate={isInView ? "show" : "hidden"}
-      variants={fade}
+      variants={projectAnimate}
       className="project"
     >
       <div
@@ -31,17 +31,17 @@ const Project = ({ data }) => {
         onMouseLeave={handleMouseLeave}
       >
         <video ref={videoRef} muted controls={false}>
-          <source src={data.imgs} type="video/mp4" />
+          <source src={proj.imgs} type="video/mp4" />
         </video>
       </div>
       <div className="project-text">
-        <h3>{data.title}</h3>
+        <h3>{proj.title}</h3>
         <div className="descripton">
-          <p>{data.description}</p>
+          <p>{proj.description}</p>
         </div>
         <div className="prog-text">
-          <h4>{data.progLang1}</h4>
-          <h4>{data.progLang2}</h4>
+          <h4>{proj.progLang1}</h4>
+          <h4>{proj.progLang2}</h4>
         </div>
         <div className="icon">
           Code
@@ -61,8 +61,8 @@ const Project = ({ data }) => {
               y2="23.508"
               gradientUnits="userSpaceOnUse"
             >
-              <stop offset="0" stop-color="#4c4c4c"></stop>
-              <stop offset="1" stop-color="#343434"></stop>
+              <stop offset="0" stopColor="#4c4c4c"></stop>
+              <stop offset="1" stopColor="#343434"></stop>
             </linearGradient>
             <path
               fill="url(#rL2wppHyxHVbobwndsT6Ca_AZOZNnY73haj_gr1)"

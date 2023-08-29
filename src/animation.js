@@ -42,7 +42,7 @@ export const fade = {
   show: {
     opacity: 1,
     transition: {
-      duration: 0.75,
+      duration: 1,
       ease: "easeOut",
     },
   },
@@ -69,18 +69,46 @@ export const iconLineAnimate = {
 export const lineSkillsAnimate = {
   hidden: {
     opacity: 0,
-    width: "0",
-    height: "0",
     transition: {
       duration: 0.75,
     },
   },
   show: {
     opacity: 1,
-    height: "1rem",
-    width: "60%",
+    transition: {
+      duration: 1.25,
+    },
+  },
+};
+
+export const svgHoverAnimate = {
+  hidden: {
+    x: -105,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  },
+  show: {
+    x: -20,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  },
+};
+
+export const projectAnimate = {
+  hidden: {
+    opacity: 0,
+    y: 200,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
     transition: {
       duration: 1,
+      ease: "easeOut",
     },
   },
 };

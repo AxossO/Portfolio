@@ -24,10 +24,9 @@ const Home = () => {
           <Landing setTurnOn={setTurnOn} turnOn={turnOn} />
           <About />
           <Projects />
+          <Contact />
         </div>
       </div>
-
-      <Contact />
     </motion.div>
   );
 };
