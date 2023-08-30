@@ -169,10 +169,12 @@
     if (!ctx.running) return;
 
     ctx.globalCompositeOperation = "source-over";
-    ctx.fillStyle = "rgb(29, 29, 29)";
+
+    ctx.fillStyle = "rgb(29,29,29)";
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     ctx.globalCompositeOperation = "lighter";
-    ctx.strokeStyle = "hsla(" + Math.round(hue.update()) + ",90%,50%,0.25)";
+
+    ctx.strokeStyle = "hsla(" + Math.round(hue.update()) + ",90%,20%,0.25)";
     ctx.lineWidth = 1;
 
     for (var i = 0, tendril; i < settings.trails; i++) {
@@ -249,7 +251,7 @@
       document.body.appendChild(form);
     }
 
-    buffer.ctx.fillStyle = "rgb(29, 29, 29)";
+    buffer.ctx.fillStyle = "rgb(29,29,29)";
     buffer.ctx.fillRect(0, 0, buffer.width, buffer.height);
 
     buffer.ctx.drawImage(

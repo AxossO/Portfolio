@@ -56,6 +56,8 @@ export const projects = () => {
       imgs: portVid,
       progLang1: "React",
       progLang2: "Scss",
+      code: "",
+      liveDemo: "",
     },
     {
       title: "Capture Portfolio",
@@ -64,6 +66,8 @@ export const projects = () => {
       imgs: portVid,
       progLang1: "React",
       progLang2: "Scss",
+      code: "",
+      liveDemo: "",
     },
     {
       title: "Capture Portfolio",
@@ -72,6 +76,8 @@ export const projects = () => {
       imgs: portVid,
       progLang1: "React",
       progLang2: "Scss",
+      code: "",
+      liveDemo: "",
     },
   ];
 };

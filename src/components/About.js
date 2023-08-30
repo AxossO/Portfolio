@@ -4,7 +4,7 @@ import IconsList from "./IconsList";
 import { motion, useInView } from "framer-motion";
 import { lineSkillsAnimate } from "../animation";
 import { Element } from "react-scroll";
-const About = () => {
+const About = ({ dark }) => {
   const [data, setData] = useState(Utli);
   const ref = useRef(null);
   const isInView = useInView(ref, { margin: "1px 0px 0px 0px" });

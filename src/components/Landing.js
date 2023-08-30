@@ -1,15 +1,18 @@
 import { motion } from "framer-motion";
 import { fade, titleAnime } from "../animation";
 import "./HoverAnimation";
-import { Element } from "react-scroll";
+import { Element, Link } from "react-scroll";
+import DarkMode from "./DarkMode";
 
-const Landing = ({ setTurnOn, turnOn }) => {
+const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
   const turnNavHandler = () => {
     setTurnOn(!turnOn);
   };
   return (
     <Element name="home">
       <motion.div className="landing">
+        <DarkMode setDark={setDark} dark={dark} />
+
         <div className="toggle" onClick={turnNavHandler}>
           ON OFF
         </div>
@@ -26,7 +29,20 @@ const Landing = ({ setTurnOn, turnOn }) => {
           </div>
 
           <motion.p variants={fade}>Frontend Developer</motion.p>
-          <motion.button variants={fade}>Contact Me</motion.button>
+          <Link
+            activeClass="active"
+            to="contacts"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={600}
+          >
+            <motion.button
+              variants={fade}
+            >
+              Contact Me
+            </motion.button>
+          </Link>
         </motion.div>
       </motion.div>
     </Element>

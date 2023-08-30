@@ -1,14 +1,27 @@
-import { motion } from "framer-motion";
-import { svgHoverAnimate } from "../animation";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { cardVariants, liHoverAnimation, svgHoverAnimate } from "../animation";
 import { HoverNavSvg } from "./HoverNavSvg";
 import { Link } from "react-scroll";
 import { AiOutlineMail } from "react-icons/ai";
-const Nav = ({ turnOn }) => {
+import { useState } from "react";
+const Nav = ({ turnOn, dark }) => {
+  const [click, setClick] = useState(false);
+  const { scrollYProgress } = useScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
+  const clickHandler = () => {
+    setClick(!click);
+  };
   return (
-    <div className={`nav ${!turnOn ? "visible" : ""}`}>
+    <div className={`nav ${!turnOn ? "visible" : ""}  ${dark ? "black" : ""}`}>
       <div className="nav-list">
         <div className="logo">
-          <motion.div>
+          <motion.div
+            className="logo-container"
+            onClick={clickHandler}
+            variants={cardVariants}
+            animate={click ? "show" : "hidden"}
+            style={{ scale }}
+          >
             How To Center A <span>Div?</span>
           </motion.div>
         </div>
@@ -22,7 +35,11 @@ const Nav = ({ turnOn }) => {
               offset={-70}
               duration={500}
             >
-              <li>Home</li>
+              <HoverNavSvg>
+                <motion.li variants={liHoverAnimation} initial={false}>
+                  Home
+                </motion.li>
+              </HoverNavSvg>
             </Link>
             <Link
               activeClass="active"
@@ -32,7 +49,11 @@ const Nav = ({ turnOn }) => {
               offset={-70}
               duration={500}
             >
-              <li>About Me</li>
+              <HoverNavSvg>
+                <motion.li variants={liHoverAnimation} initial={false}>
+                  About Me
+                </motion.li>
+              </HoverNavSvg>
             </Link>
             <Link
               activeClass="active"
@@ -42,7 +63,11 @@ const Nav = ({ turnOn }) => {
               offset={-70}
               duration={500}
             >
-              <li>Projects</li>
+              <HoverNavSvg>
+                <motion.li variants={liHoverAnimation} initial={false}>
+                  Projects
+                </motion.li>
+              </HoverNavSvg>
             </Link>
             <Link
               activeClass="active"
@@ -52,7 +77,11 @@ const Nav = ({ turnOn }) => {
               offset={-70}
               duration={500}
             >
-              <li>Contacts</li>
+              <HoverNavSvg>
+                <motion.li variants={liHoverAnimation} initial={false}>
+                  Contacts
+                </motion.li>
+              </HoverNavSvg>
             </Link>
           </ul>
         </div>

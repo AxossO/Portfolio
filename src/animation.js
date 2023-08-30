@@ -97,6 +97,22 @@ export const svgHoverAnimate = {
     },
   },
 };
+export const liHoverAnimation = {
+  hidden: {
+    x: 0,
+    transition: {
+      duration: 0.2,
+      ease: "easeOut",
+    },
+  },
+  show: {
+    x: 5,
+    transition: {
+      duration: 0.2,
+      ease: "easeOut",
+    },
+  },
+};
 
 export const projectAnimate = {
   hidden: {
@@ -110,5 +126,24 @@ export const projectAnimate = {
       duration: 1,
       ease: "easeOut",
     },
+  },
+};
+
+export const cardVariants = {
+  hidden: {
+    rotateY: 0,
+    scale: 1.1,
+    transition: { duration: 0.5 },
+    zIndex: 10,
+    boxShadow:
+      "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
+  },
+  show: {
+    scale: 1.0,
+    rotateY: 360,
+    transition: { duration: 0.5 },
+    zIndex: 10,
+    boxShadow:
+      "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
   },
 };

@@ -9,20 +9,25 @@ import Contact from "../components/Contact";
 
 const Home = () => {
   const [turnOn, setTurnOn] = useState(true);
-
+  const [dark, setDark] = useState(false);
   return (
     <motion.div
       variants={pageAnimation}
       initial="hidden"
       exit="exit"
       animate="show"
-      className="home"
+      className={`home-par ${dark ? "yellow" : ""} `}
     >
       <div className="home-container">
-        <Nav setTurnOn={setTurnOn} turnOn={turnOn} />
-        <div className="content">
-          <Landing setTurnOn={setTurnOn} turnOn={turnOn} />
-          <About />
+        <Nav setTurnOn={setTurnOn} turnOn={turnOn} dark={dark} />
+        <div className={`content ${dark ? "black-text" : ""} `}>
+          <Landing
+            setTurnOn={setTurnOn}
+            turnOn={turnOn}
+            dark={dark}
+            setDark={setDark}
+          />
+          <About dark={dark} />
           <Projects />
           <Contact />
         </div>

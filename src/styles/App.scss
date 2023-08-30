@@ -21,11 +21,13 @@ a {
   text-decoration: none;
 }
 li {
+  font-family: "Roboto Mono", monospace;
   padding: 1rem 0rem;
   color: var(--main-text-color);
 }
 h1 {
   color: var(--main-text-color);
+  font-family: "ADLaM Display", cursive;
 }
 .home-container {
   display: flex;
@@ -62,6 +64,8 @@ h1 {
     line-height: 1.2;
 
     span {
+      font-family: "ADLaM Display", cursive;
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -105,13 +109,13 @@ h1 {
     letter-spacing: -3px;
     position: relative;
     width: auto;
-    font-family: 'ADLaM Display', cursive;
-
+    font-family: "ADLaM Display", cursive;
 
     h1 {
       padding-bottom: 3rem;
     }
     button {
+      font-family: "Roboto Mono", monospace;
       padding: 1rem 4rem;
       border: 1px solid var(--main-text-color);
       border-bottom-left-radius: 10px;
@@ -122,7 +126,6 @@ h1 {
       background: transparent;
       color: white;
       transition: all 0.5s ease;
-      font-family: "Inter", sans-serif;
       margin-top: 2rem;
       &:hover {
         background-color: var(--main-text-color);
@@ -163,6 +166,7 @@ h1 {
       flex: 1;
       .skills {
         padding: 2rem 1rem;
+        font-family: "Roboto Mono", monospace;
         h2 {
           font-size: 1.6rem;
           padding-left: 5px;
@@ -199,9 +203,11 @@ h1 {
   gap: 20px;
   min-height: 30vh;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
   .icons-box {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
     position: relative;
+
     .icons-line {
       width: 5px;
       height: 5px;
@@ -264,8 +270,9 @@ h1 {
         // flex-direction: column;
         // align-items: flex-start;
         // padding: 0rem 2rem;
+        font-family: "Roboto Mono", monospace;
         .descripton {
-          padding: 2rem;
+          padding: 0rem 0rem 0rem 2rem;
 
           p {
             max-width: 15rem;
@@ -291,6 +298,25 @@ h1 {
           justify-content: center;
           align-items: center;
           gap: 1rem;
+        }
+        .prog-text h4 {
+          font-family: "Roboto Mono", monospace;
+        }
+        .icon {
+          gap: 2rem;
+        }
+        button {
+          border: none;
+          background: none;
+          cursor: pointer;
+          font-family: "Roboto Mono", monospace;
+          font-size: 1.1rem;
+        }
+        .code {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
         }
         h4 {
           font-weight: bold;
@@ -321,17 +347,12 @@ h1 {
 .right-nav-contant {
   .box {
     display: flex;
-    // background-color: #5f6673;
     align-items: center;
-    transform: translateX(-70%);
     justify-content: flex-end;
     padding: 10px 0rem;
     gap: 1rem;
-    // &:hover {
-    //   transform: translateX(0%);
-    //   transition: 0.8s ease-out;
-    //   padding-right: 1rem;
-    // }
+    font-family: "ADLaM Display", cursive;
+
     h4 {
       font-size: 1.2rem;
       color: var(--main-text-color);
@@ -349,15 +370,24 @@ h1 {
   text-align: center;
   font-size: 2.2rem;
   margin-bottom: 2rem;
+  font-family: "Phudu", cursive;
 }
 .end-title {
   font-size: 1.2rem;
   margin-top: 5rem;
+  font-family: "Phudu", cursive;
 }
 
 .toggle {
   top: 0;
   position: absolute;
+}
+.dark {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  background: darkgray;
+  cursor: pointer;
 }
 
 .visible {
@@ -365,7 +395,11 @@ h1 {
   transition: 1s ease-out;
   display: block !important;
 }
+
 @media screen and (max-width: 510px) {
+  .landing {
+    min-height: 87vh;
+  }
   .hello {
     font-size: 1.7rem !important;
     text-align: center;
@@ -396,7 +430,10 @@ h1 {
 
 .contact {
   padding: 1rem 5rem;
+
   h2 {
+    font-family: "Phudu", cursive;
+
     font-size: 3.8rem;
     font-weight: bold;
     display: inline;
@@ -438,9 +475,10 @@ h1 {
       margin: 8px 0rem;
     }
     .contact-button {
+      font-family: "ADLaM Display", cursive;
       background-color: var(--main-text-color);
       border: none;
-      color: #ffffff;
+      color: #ffffff !important;
       padding: 0rem 1.5rem;
       margin: 2rem auto;
       display: flex;
@@ -470,5 +508,77 @@ h1 {
   40%,
   60% {
     transform: translateY(-15px);
+  }
+}
+
+.mark {
+  border: 1px solid var(--main-text-color);
+  border-radius: 10px;
+  margin-right: 1.4rem;
+  font-size: 6rem;
+  color: var(--main-text-color);
+}
+
+.yellow {
+  background-color: white;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.black-text {
+  p,
+  h2,
+  div,
+  .icons-title,
+  button {
+    color: var(--main-text-color) !important;
+  }
+}
+
+@media screen and (max-width: 1027px) {
+  .contact {
+    h2 {
+      font-size: 1.7rem;
+    }
+  }
+  .about {
+    padding-right: 0;
+    .about-container {
+      flex-direction: column;
+    }
+  }
+  .projects {
+    padding: 0;
+    .title {
+      padding-top: 3rem;
+      font-size: 1.7rem;
+    }
+    .project {
+      flex-direction: column;
+      text-align: center;
+      .project-text {
+        padding-top: 3rem;
+        .descripton {
+          padding: 0 !important;
+          p {
+            max-width: none !important;
+            min-height: auto !important;
+          }
+        }
+      }
+    }
+    .end-title h2 {
+      font-size: 1.7rem;
+      padding-bottom: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .about-container {
+    p {
+      font-size: 0.8rem;
+    }
   }
 }

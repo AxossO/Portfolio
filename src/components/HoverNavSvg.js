@@ -13,4 +13,3 @@ export const HoverNavSvg = ({ children }) => {
     </motion.div>
   );
 };
-
