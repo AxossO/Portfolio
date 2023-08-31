@@ -3,32 +3,52 @@ import { fade, titleAnime } from "../animation";
 import "./HoverAnimation";
 import { Element, Link } from "react-scroll";
 import DarkMode from "./DarkMode";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { Letter, LetterAnime } from "./HoverNavSvg";
+import { useState } from "react";
 
 const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
   const turnNavHandler = () => {
     setTurnOn(!turnOn);
   };
+
+  const nameArray = ["A", "h", "m", "a", "d"];
+  const jobArray = [
+    "W",
+    "e",
+    "b",
+    " ",
+    "D",
+    "e",
+    "v",
+    "e",
+    "l",
+    "o",
+    "p",
+    "e",
+    "r",
+  ];
   return (
     <Element name="home">
       <motion.div className="landing">
         <DarkMode setDark={setDark} dark={dark} />
-
         <div className="toggle" onClick={turnNavHandler}>
-          ON OFF
+          <RxHamburgerMenu />
         </div>
         <motion.div className="hello">
-          <div className="hide">
+          <div className={`hide text-animate-hover`}>
             <motion.h1 variants={titleAnime}> Hello,</motion.h1>
           </div>
-          <div className="hide">
+          <div className={`hide text-animate-hover`}>
             <motion.h1 variants={titleAnime}>I'm Ahmad,</motion.h1>
           </div>
 
-          <div className="hide">
+          <div className={`hide text-animate-hover`}>
             <motion.h1 variants={titleAnime}>Web Deveolper</motion.h1>
           </div>
-
-          <motion.p variants={fade}>Frontend Developer</motion.p>
+          <motion.p className="text-animate-hover" variants={fade}>
+            Frontend Developer
+          </motion.p>
           <Link
             activeClass="active"
             to="contacts"
@@ -37,11 +57,7 @@ const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
             offset={-70}
             duration={600}
           >
-            <motion.button
-              variants={fade}
-            >
-              Contact Me
-            </motion.button>
+            <motion.button variants={fade}>Contact Me</motion.button>
           </Link>
         </motion.div>
       </motion.div>

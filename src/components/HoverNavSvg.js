@@ -13,3 +13,17 @@ export const HoverNavSvg = ({ children }) => {
     </motion.div>
   );
 };
+
+export const Letter = ({ children }) => {
+  const [hovered, setHovered] = React.useState(false);
+  const toggleHover = () => setHovered(!hovered);
+  return (
+    <span
+      className={hovered ? "text-animate-hover" : ""}
+      onMouseEnter={toggleHover}
+      onMouseLeave={toggleHover}
+    >
+      {children}
+    </span>
+  );
+};

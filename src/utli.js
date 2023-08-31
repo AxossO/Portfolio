@@ -52,31 +52,31 @@ export const projects = () => {
     {
       title: "Capture Portfolio",
       description:
-        "A car rental website is an online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars.",
+        "Embark on a visual journey with the Capture Portfolio. This immersive website, powered by the dynamic Framer Motion library, transports you to the heart of a photographer's artistry. Explore a world of creativity and storytelling, one frame at a time.",
       imgs: portVid,
       progLang1: "React",
       progLang2: "Scss",
-      code: "",
+      code: "https://github.com/AxossO/Capture-Project.git",
       liveDemo: "",
     },
     {
-      title: "Capture Portfolio",
+      title: "Ignite",
       description:
-        "A car rental website is an online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars.",
+        "Ignite is your gateway to the gaming universe. Leveraging the powerful capabilities of the Framer Motion library and seamless routing, this project connects you with the latest, most popular, and top-rated games from the RAWG gaming API. Dive into the world of gaming like never before, where every click ignites a new adventure.",
       imgs: portVid,
       progLang1: "React",
       progLang2: "Scss",
-      code: "",
+      code: "https://github.com/AxossO/React-Ignite.git",
       liveDemo: "",
     },
     {
-      title: "Capture Portfolio",
+      title: "Music Player",
       description:
-        "A car rental website is an online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars.",
+        "Unleash your inner musical maverick with the Music Player. This fantastically entertaining website is your ticket to a world of whimsical audio adventures. Let the laughter flow as you explore a musical journey like no other, filled with quirky tunes that will have you tapping your feet and giggling in delight.",
       imgs: portVid,
       progLang1: "React",
       progLang2: "Scss",
-      code: "",
+      code: "https://github.com/AxossO/music-player-react.git",
       liveDemo: "",
     },
   ];

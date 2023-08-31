@@ -1,6 +1,10 @@
 :root {
-  --main-text-color: #f85dc6;
+  --main-text-color: #00e2d5;
   --fav-text-color: #00c3f5;
+  --light-text-color: black;
+  --dark-text-color: #4e4d4e;
+  // --title-color: #00e2d5;
+  --white-color: white;
 }
 * {
   margin: 0;
@@ -23,10 +27,10 @@ a {
 li {
   font-family: "Roboto Mono", monospace;
   padding: 1rem 0rem;
-  color: var(--main-text-color);
+  color: var(--white-color);
 }
 h1 {
-  color: var(--main-text-color);
+  color: var(--white-color);
   font-family: "ADLaM Display", cursive;
 }
 .home-container {
@@ -69,7 +73,7 @@ h1 {
       display: flex;
       justify-content: center;
       align-items: center;
-      color: var(--main-text-color);
+      color: var(--fav-text-color);
     }
   }
   .nav-list {
@@ -80,7 +84,7 @@ h1 {
       text-align: center;
       li {
         cursor: pointer;
-        border-top: 1px solid #ddd;
+        border-top: 1px solid #6f6e6c;
       }
     }
     .nav-social {
@@ -124,7 +128,7 @@ h1 {
       font-size: 1.1rem;
       cursor: pointer;
       background: transparent;
-      color: white;
+      color: var(--main-text-color);
       transition: all 0.5s ease;
       margin-top: 2rem;
       &:hover {
@@ -135,7 +139,7 @@ h1 {
     p {
       font-size: 2rem;
       letter-spacing: 5px;
-      color: var(--main-text-color);
+      color: var(--white-color);
     }
   }
 }
@@ -157,6 +161,7 @@ h1 {
       h1 {
         padding-bottom: 1rem;
         font-size: 3.8rem;
+        color: var(--main-text-color);
       }
       p {
         line-height: 1.5;
@@ -180,8 +185,8 @@ h1 {
           margin-top: 1rem;
           height: 10px;
           border-radius: 20px;
-          background-color: var(--main-text-color);
           position: relative;
+          background-color: var(--main-text-color);
           &::after {
             content: attr(data-progress);
             width: 5px;
@@ -371,29 +376,51 @@ h1 {
   font-size: 2.2rem;
   margin-bottom: 2rem;
   font-family: "Phudu", cursive;
+  h2 {
+    color: var(--main-text-color);
+  }
 }
 .end-title {
   font-size: 1.2rem;
   margin-top: 5rem;
   font-family: "Phudu", cursive;
+  h2 {
+    color: var(--main-text-color);
+  }
 }
 
 .toggle {
   top: 0;
   position: absolute;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
 }
 .dark {
   position: absolute;
   top: 0;
   right: 50%;
-  background: darkgray;
   cursor: pointer;
+  svg {
+    background-color: #00c3f5;
+  }
 }
 
 .visible {
   transform: translateX(-300%);
   transition: 1s ease-out;
   display: block !important;
+}
+
+@media screen and (min-width: 892px) {
+  .dark {
+    padding-right: 10rem;
+    right: 0;
+  }
+  .moon {
+    padding: 1rem 0rem;
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 510px) {
@@ -413,6 +440,10 @@ h1 {
   }
 }
 @media screen and (max-width: 890px) {
+  .toggle {
+    display: block;
+    right: 0;
+  }
   .nav {
     display: none;
     transform: translateX(0);
@@ -434,6 +465,7 @@ h1 {
   h2 {
     font-family: "Phudu", cursive;
 
+    color: var(--main-text-color);
     font-size: 3.8rem;
     font-weight: bold;
     display: inline;
@@ -447,6 +479,14 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    .contact-information {
+      position: absolute;
+      div {
+        color: #6f6e6c;
+        font-family: "Roboto Mono";
+      }
+    }
     form {
       display: flex;
       flex-direction: column;
@@ -511,14 +551,6 @@ h1 {
   }
 }
 
-.mark {
-  border: 1px solid var(--main-text-color);
-  border-radius: 10px;
-  margin-right: 1.4rem;
-  font-size: 6rem;
-  color: var(--main-text-color);
-}
-
 .yellow {
   background-color: white;
 }
@@ -529,12 +561,17 @@ h1 {
 
 .black-text {
   p,
+  h1,
   h2,
+  h3,
   div,
   .icons-title,
   button {
-    color: var(--main-text-color) !important;
+    color: var(--light-text-color) !important;
   }
+}
+.line {
+  background-color: black;
 }
 
 @media screen and (max-width: 1027px) {
@@ -576,9 +613,42 @@ h1 {
   }
 }
 @media screen and (max-width: 540px) {
+  .contact-information {
+    font-size: 0.8rem;
+  }
   .about-container {
     p {
       font-size: 0.8rem;
     }
+  }
+}
+
+.text-animate-hover {
+  &:hover {
+    animation: rubberband 1s;
+  }
+}
+
+@keyframes rubberband {
+  0% {
+    transform: scaleX(1);
+  }
+  40% {
+    transform: scaleX(1.12) scaleY(0.75);
+  }
+  55% {
+    transform: scaleX(0.85) scaleY(1);
+  }
+  65% {
+    transform: scaleX(1.09) scaleY(0.85);
+  }
+  75% {
+    transform: scaleX(0.9) scaleY(1);
+  }
+  90% {
+    transform: scaleX(1.05) scaleY(0.95);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
   }
 }
