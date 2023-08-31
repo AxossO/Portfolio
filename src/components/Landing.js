@@ -4,30 +4,14 @@ import "./HoverAnimation";
 import { Element, Link } from "react-scroll";
 import DarkMode from "./DarkMode";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Letter, LetterAnime } from "./HoverNavSvg";
-import { useState } from "react";
+
 
 const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
   const turnNavHandler = () => {
     setTurnOn(!turnOn);
   };
 
-  const nameArray = ["A", "h", "m", "a", "d"];
-  const jobArray = [
-    "W",
-    "e",
-    "b",
-    " ",
-    "D",
-    "e",
-    "v",
-    "e",
-    "l",
-    "o",
-    "p",
-    "e",
-    "r",
-  ];
+
   return (
     <Element name="home">
       <motion.div className="landing">

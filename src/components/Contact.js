@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Element } from "react-scroll";
 import { MdLocationPin } from "react-icons/md";
 const Contact = () => {
-  const [thereIs, setThereIs] = useState("");
+  const [thereIs] = useState("");
   const checkHandler = (e) => {
     e.preventDefault();
     if (!thereIs.trim()) {
