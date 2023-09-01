@@ -1,5 +1,6 @@
 :root {
-  --main-text-color: #00e2d5;
+  --main-text-color: #00c3f5;
+  // --main-text-color: #00e2d5;
   --fav-text-color: #00c3f5;
   --light-text-color: black;
   --dark-text-color: #4e4d4e;
@@ -364,7 +365,7 @@ h1 {
     }
     svg {
       border: 1px solid black;
-      background-color: var(--main-text-color);
+      background-color: var(--white-color);
       border-radius: 50%;
       cursor: pointer;
     }
@@ -560,14 +561,19 @@ h1 {
 }
 
 .black-text {
-  p,
   h1,
   h2,
   h3,
   div,
   .icons-title,
   button {
-    color: var(--light-text-color) !important;
+    color: var(--main-text-color) !important;
+  }
+  p {
+    color: var(--dark-text-color);
+  }
+  .hello p {
+    color: var(--light-text-color);
   }
 }
 .line {

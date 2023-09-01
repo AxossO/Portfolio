@@ -20,10 +20,6 @@
 
   Math.TWO_PI = Math.PI * 2;
 
-  // ========================================================================================
-  // Oscillator 何问起
-  // ----------------------------------------------------------------------------------------
-
   function Oscillator(options) {
     this.init(options || {});
   }
@@ -50,10 +46,6 @@
       },
     };
   })();
-
-  // ========================================================================================
-  // Tendril hovertree.com
-  // ----------------------------------------------------------------------------------------
 
   function Tendril(options) {
     this.init(options || {});
@@ -137,8 +129,6 @@
       },
     };
   })();
-
-  // ----------------------------------------------------------------------------------------
 
   function init(event) {
     document.removeEventListener("mousemove", init);
@@ -225,12 +215,8 @@
   }
 
   function keyup(event) {
-    switch (event.keyCode) {
-      case 32:
-        save();
-        break;
-      default:
-      // console.log(event.keyCode); hovertree.com
+    if (event.keyCode === 32) {
+      save();
     }
   }
 
@@ -267,15 +253,6 @@
       logo.width / 2,
       logo.height / 2
     );
-
-    window.open(
-      buffer.toDataURL(),
-      "wallpaper",
-      "top=0,left=0,width=" + buffer.width + ",height=" + buffer.height
-    );
-
-    // form.input.value = buffer.toDataURL().substr(22);
-    // form.submit(); hovertree.com
   }
 
   window.requestAnimFrame = (function () {
@@ -315,19 +292,5 @@
     window.addEventListener("blur", stop);
 
     resize();
-
-    if (window.DEBUG) {
-      // eslint-disable-next-line no-unused-vars
-      var gui = new dat.GUI();
-
-      // gui.add(settings, 'debug');
-      settings.gui.add(settings, "trails", 1, 30).onChange(reset);
-      settings.gui.add(settings, "size", 25, 75).onFinishChange(reset);
-      settings.gui.add(settings, "friction", 0.45, 0.55).onFinishChange(reset);
-      settings.gui.add(settings, "dampening", 0.01, 0.4).onFinishChange(reset);
-      settings.gui.add(settings, "tension", 0.95, 0.999).onFinishChange(reset);
-
-      document.body.appendChild(ctx.stats.domElement);
-    }
   };
 })(window);

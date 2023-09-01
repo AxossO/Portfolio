@@ -84,8 +84,9 @@ const Project = ({ proj }) => {
               </svg>
             </button>
           </a>
-
-          <button>Live Demo</button>
+          <a href={proj.liveDemo} target="_blank" rel="noreferrer">
+            <button>Live Demo</button>
+          </a>
         </div>
       </div>
     </motion.div>
