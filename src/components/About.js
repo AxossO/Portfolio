@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { Utli } from "../utli";
 import IconsList from "./IconsList";
 import { motion, useInView } from "framer-motion";
-import { lineSkillsAnimate } from "../animation";
+import { aboutAnime, lineSkillsAnimate } from "../animation";
 import { Element } from "react-scroll";
 const About = ({ dark }) => {
   const [data] = useState(Utli);
@@ -11,9 +11,21 @@ const About = ({ dark }) => {
 
   return (
     <Element name="about">
-      <div className="about">
-        <div className="about-container">
-          <div className="box">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={isInView ? "show" : "hidden"}
+        variants={aboutAnime}
+        className="about"
+      >
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "show" : "hidden"}
+          variants={aboutAnime}
+          className="about-container"
+        >
+          <motion.div className="box">
             <h1>ABOUT ME</h1>
             <p>
               I am a passionate Front-End Developer hailing from Egypt, and I
@@ -44,12 +56,13 @@ const About = ({ dark }) => {
               with you as we explore the exciting world of web development
               together.
             </p>
-          </div>
+          </motion.div>
           <div className="skillz-box">
             <div className="skills">
               <h2>HTML</h2>
               <motion.div className="prog">
                 <motion.div
+                  variants={lineSkillsAnimate}
                   ref={ref}
                   initial="hidden"
                   animate={isInView ? "show" : "hidden"}
@@ -102,13 +115,13 @@ const About = ({ dark }) => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="icons-list">
           {data.map((data, key) => (
             <IconsList key={key} data={data} />
           ))}
         </div>
-      </div>
+      </motion.div>
     </Element>
   );
 };

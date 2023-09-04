@@ -148,15 +148,16 @@ export const cardVariants = {
   },
 };
 
-export const titleAnimation = {
+export const aboutAnime = {
   hidden: {
-    y: 0,
-
+    opacity: 0,
+    y: 200,
   },
   show: {
-    y: -10,
+    opacity: 1,
+    y: 0,
     transition: {
-      duration: 0.1,
+      duration: 0.75,
       ease: "easeOut",
     },
   },

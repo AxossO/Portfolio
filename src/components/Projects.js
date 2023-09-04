@@ -4,7 +4,7 @@ import Project from "./Project";
 import { Element } from "react-scroll";
 
 const Projects = () => {
-  const [projectInfo, setProjectInfo] = useState(projects);
+  const [projectInfo] = useState(projects);
   return (
     <Element name="projects">
       <div className="projects">

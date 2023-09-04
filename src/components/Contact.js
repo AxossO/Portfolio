@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Element } from "react-scroll";
 import { MdLocationPin } from "react-icons/md";
+import { motion, useInView } from "framer-motion";
+import { fade } from "../animation";
 const Contact = () => {
   const [thereIs] = useState("");
   const checkHandler = (e) => {
@@ -9,9 +11,17 @@ const Contact = () => {
       return;
     }
   };
+  const ref = useRef(null);
+  const isInView = useInView(ref, { margin: "1px 0px 0px 0px" });
   return (
     <Element name="contacts">
-      <div className="contact">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={isInView ? "show" : "hidden"}
+        variants={fade}
+        className="contact"
+      >
         <h2>Contact</h2>
         <p>Submit the form below to get in touch with me</p>
         <div className="contact-container">
@@ -44,7 +54,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-      </div>
+      </motion.div>
     </Element>
   );
 };

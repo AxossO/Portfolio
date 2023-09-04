@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
-import { fade, titleAnimation, titleAnime } from "../animation";
+import { fade, titleAnime } from "../animation";
 import "./HoverAnimation";
 import { Element, Link } from "react-scroll";
 import DarkMode from "./DarkMode";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { HoverNavSvg } from "./HoverNavSvg";
 
 const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
   const turnNavHandler = () => {
