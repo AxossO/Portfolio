@@ -17,8 +17,19 @@ const Projects = () => {
             <Project proj={proj} key={key} />
           ))}
         </div>
+        <a
+          href="https://github.com/AxossO?tab=repositories"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="more">
+            For more
+            <br />
+            <span> PRESS HERE</span>
+          </button>
+        </a>
         <div className="end-title">
-          <h2>&lt;PROJECTS&gt;</h2>
+          <h2>{"</PROJECTS>"}</h2>
         </div>
       </div>
     </Element>
