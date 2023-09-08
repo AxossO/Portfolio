@@ -5,12 +5,10 @@ import { Element, Link } from "react-scroll";
 import DarkMode from "./DarkMode";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-
 const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
   const turnNavHandler = () => {
     setTurnOn(!turnOn);
   };
-
 
   return (
     <Element name="home">
@@ -21,7 +19,9 @@ const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
         </div>
         <motion.div className="hello">
           <div className={`hide text-animate-hover`}>
-            <motion.h1 variants={titleAnime}> Hello,</motion.h1>
+            <motion.h1 variants={titleAnime} whileHover="hover">
+              Hello,
+            </motion.h1>
           </div>
           <div className={`hide text-animate-hover`}>
             <motion.h1 variants={titleAnime}>I'm Ahmad,</motion.h1>

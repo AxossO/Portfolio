@@ -6,10 +6,13 @@ import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import { useLocation } from "react-router-dom";
 
 const Home = () => {
   const [turnOn, setTurnOn] = useState(true);
   const [dark, setDark] = useState(false);
+  const location = useLocation();
+  console.log(location);
   return (
     <motion.div
       variants={pageAnimation}

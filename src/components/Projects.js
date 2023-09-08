@@ -4,7 +4,7 @@ import Project from "./Project";
 import { Element } from "react-scroll";
 
 const Projects = () => {
-  const [projectInfo, setProjectInfo] = useState(projects);
+  const [projectInfo] = useState(projects);
   return (
     <Element name="projects">
       <div className="projects">
@@ -17,8 +17,19 @@ const Projects = () => {
             <Project proj={proj} key={key} />
           ))}
         </div>
+        <a
+          href="https://github.com/AxossO?tab=repositories"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="more">
+            For more
+            <br />
+            <span> PRESS HERE</span>
+          </button>
+        </a>
         <div className="end-title">
-          <h2>&lt;PROJECTS&gt;</h2>
+          <h2>{"</PROJECTS>"}</h2>
         </div>
       </div>
     </Element>
