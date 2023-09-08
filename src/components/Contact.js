@@ -18,7 +18,7 @@ const Contact = () => {
           <div className="contact-information">
             <div className="email-address">Email ahmadsayed142d@gmail.com</div>
             <br />
-            <div className="phone">Phone +0200101645177</div> <br />
+            <div className="phone">Phone +200101645177</div> <br />
             <div className="location">
               Egypt Cairo <MdLocationPin />
             </div>
