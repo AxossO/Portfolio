@@ -1,14 +1,27 @@
 import React from "react";
 
-const DarkMode = ({ dark, setDark }) => {
+const DarkMode = ({ dark, setDark, setTurnOn, turnOn }) => {
   const clickHandler = () => {
     setDark(!dark);
   };
+  const onHandler = () => {
+    setTurnOn(!turnOn);
+  };
   return (
-    <div className="dark">
+    <div className="absolute top-0 right-0 md:right-1/2 cursor-pointer ">
+      <button
+        id="menu-btn"
+        class=" -left-12 cursor-pointer relative md:hidden focus:outline-none hamburger bg-white text-cyan-50"
+        onClick={onHandler}
+      >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
       <div className="sun"></div>
       <div onClick={clickHandler} className="moon">
         <svg
+          className="bg-[#00c3f5]"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"

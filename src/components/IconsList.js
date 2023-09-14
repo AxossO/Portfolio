@@ -6,19 +6,19 @@ const IconsList = ({ data }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { margin: "1px 0px 0px 0px" });
   return (
-    <motion.div className="icons-list">
-      <motion.div className="icons-box">
+    <motion.div className="icons-list ">
+      <motion.div className="shadow-2xl  relative">
         <motion.div
           ref={ref}
           initial="hidden"
           animate={isInView ? "show" : "hidden"}
           variants={iconLineAnimate}
-          className="icons-line"
+          className="w-1 h-1 bg-mainTextColor left-1/2 absolute block"
         ></motion.div>
         <img
           src={`data:image/svg+xml;utf8,${encodeURIComponent(data.mainImg)}`}
           alt={data.title}
-          className="icons-svg"
+          className="h-[13vh]  w-full my-2 mx-0"
         ></img>
         <div className="icons-title">{data.title} </div>
       </motion.div>

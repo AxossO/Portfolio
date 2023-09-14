@@ -12,9 +12,13 @@ const Nav = ({ turnOn, dark }) => {
     setClick(!click);
   };
   return (
-    <div className={`nav ${!turnOn ? "visible" : ""}  ${dark ? "black" : ""}`}>
-      <div className="nav-list">
-        <div className="logo">
+    <div
+      className={`fixed h-full max-w-[10rem] z-50 bg-[#191919] transition-all duration-100 ease-out ${
+        !turnOn ? "visible" : ""
+      } md:block ${dark ? "black" : ""}`}
+    >
+      <div className="relative">
+        <div className="min-h-[28vh] py-8 px-4 cursor-pointer ">
           <motion.div
             className="logo-container"
             onClick={clickHandler}
@@ -22,11 +26,14 @@ const Nav = ({ turnOn, dark }) => {
             animate={click ? "show" : "hidden"}
             style={{ scale }}
           >
-            How To Center A <span>Div?</span>
+            How To Center A
+            <span className="font-Adlam flex justify-center items-center text-mainTextColor">
+              Div?
+            </span>
           </motion.div>
         </div>
-        <div className="nav-container">
-          <ul>
+        <div className="py-3 px-0 text-xl text-center">
+          <ul className="overflow-hidden  tracking-widest ">
             <Link
               activeClass="active"
               to="home"
@@ -36,7 +43,11 @@ const Nav = ({ turnOn, dark }) => {
               duration={500}
             >
               <HoverNavSvg>
-                <motion.li variants={liHoverAnimation} initial={false}>
+                <motion.li
+                  variants={liHoverAnimation}
+                  initial={false}
+                  className="cursor-pointer border-t-[1px] border-t-[#6f6e6c]"
+                >
                   Home
                 </motion.li>
               </HoverNavSvg>
@@ -50,7 +61,11 @@ const Nav = ({ turnOn, dark }) => {
               duration={500}
             >
               <HoverNavSvg>
-                <motion.li variants={liHoverAnimation} initial={false}>
+                <motion.li
+                  variants={liHoverAnimation}
+                  initial={false}
+                  className="cursor-pointer border-t-[1px] border-t-[#6f6e6c]"
+                >
                   About Me
                 </motion.li>
               </HoverNavSvg>
@@ -64,7 +79,11 @@ const Nav = ({ turnOn, dark }) => {
               duration={500}
             >
               <HoverNavSvg>
-                <motion.li variants={liHoverAnimation} initial={false}>
+                <motion.li
+                  variants={liHoverAnimation}
+                  initial={false}
+                  className="cursor-pointer border-t-[1px] border-t-[#6f6e6c]"
+                >
                   Projects
                 </motion.li>
               </HoverNavSvg>
@@ -78,7 +97,11 @@ const Nav = ({ turnOn, dark }) => {
               duration={500}
             >
               <HoverNavSvg>
-                <motion.li variants={liHoverAnimation} initial={false}>
+                <motion.li
+                  variants={liHoverAnimation}
+                  initial={false}
+                  className="cursor-pointer border-t-[1px] border-t-[#6f6e6c]"
+                >
                   Contacts
                 </motion.li>
               </HoverNavSvg>
@@ -95,10 +118,11 @@ const Nav = ({ turnOn, dark }) => {
               <motion.div
                 initial={false}
                 variants={svgHoverAnimate}
-                className="box"
+                className="nav-contant-box"
               >
-                <h4>linkdin</h4>
+                <h4 className="text-xl text-mainTextColor">linkdin</h4>
                 <motion.svg
+                  className="border-2 bg-whiteColor rounded-full cursor-pointer border-black"
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
@@ -120,10 +144,11 @@ const Nav = ({ turnOn, dark }) => {
               <motion.div
                 initial={false}
                 variants={svgHoverAnimate}
-                className="box"
+                className="nav-contant-box"
               >
-                <h4>Github</h4>
+                <h4 className="text-xl text-mainTextColor">Github</h4>
                 <svg
+                  className="border-2 bg-whiteColor rounded-full cursor-pointer border-black"
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
@@ -148,10 +173,13 @@ const Nav = ({ turnOn, dark }) => {
               <motion.div
                 initial={false}
                 variants={svgHoverAnimate}
-                className="box"
+                className="nav-contant-box"
               >
-                <h4>Mail</h4>
-                <AiOutlineMail fill="black" className="mail" />
+                <h4 className="text-xl text-mainTextColor">Mail</h4>
+                <AiOutlineMail
+                  fill="black"
+                  className="w-10 h-10 border-2 bg-whiteColor rounded-full cursor-pointer border-black"
+                />
               </motion.div>
             </a>
           </HoverNavSvg>
@@ -159,10 +187,13 @@ const Nav = ({ turnOn, dark }) => {
             <motion.div
               initial={false}
               variants={svgHoverAnimate}
-              className="box"
+              className="nav-contant-box"
             >
-              <h4>Discord</h4>
+              <h4 className="text-xl text-mainTextColor cursor-pointer">
+                Discord
+              </h4>
               <svg
+                className="border-2 bg-whiteColor rounded-full cursor-pointer border-black"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"

@@ -12,25 +12,44 @@ const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
 
   return (
     <Element name="home">
-      <motion.div className="landing">
-        <DarkMode setDark={setDark} dark={dark} />
-        <div className="toggle" onClick={turnNavHandler}>
+      <motion.div className="min-h-screen flex items-center pl-6 relative">
+        <DarkMode
+          turnOn={turnOn}
+          setTurnOn={setTurnOn}
+          setDark={setDark}
+          dark={dark}
+        />
+        <div
+          className="top-0 absolute text-4xl cursor-pointer hidden"
+          onClick={turnNavHandler}
+        >
           <RxHamburgerMenu />
         </div>
-        <motion.div className="hello">
+        <motion.div className="text-5xl space-y-8">
           <div className={`hide text-animate-hover`}>
-            <motion.h1 variants={titleAnime} whileHover="hover">
+            <motion.h1
+              variants={titleAnime}
+              whileHover="hover"
+              className="text-8xl"
+            >
               Hello,
             </motion.h1>
           </div>
           <div className={`hide text-animate-hover`}>
-            <motion.h1 variants={titleAnime}>I'm Ahmad,</motion.h1>
+            <motion.h1 variants={titleAnime} className=" text-8xl">
+              I'm Ahmad,
+            </motion.h1>
           </div>
 
           <div className={`hide text-animate-hover`}>
-            <motion.h1 variants={titleAnime}>Web Deveolper</motion.h1>
+            <motion.h1 variants={titleAnime} className=" text-8xl">
+              Web Deveolper
+            </motion.h1>
           </div>
-          <motion.p className="text-animate-hover" variants={fade}>
+          <motion.p
+            className="text-animate-hover text-2xl  tracking-toWide  text-whiteColor"
+            variants={fade}
+          >
             Frontend Developer
           </motion.p>
           <Link
@@ -41,7 +60,9 @@ const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
             offset={-70}
             duration={600}
           >
-            <motion.button variants={fade}>Contact Me</motion.button>
+            <motion.button variants={fade} className="land-button ">
+              Contact Me
+            </motion.button>
           </Link>
         </motion.div>
       </motion.div>

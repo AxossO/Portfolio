@@ -7,10 +7,10 @@ const Projects = () => {
   const [projectInfo] = useState(projects);
   return (
     <Element name="projects">
-      <div className="projects">
-        <div className="project-container">
-          <div className="title">
-            <h2>&lt;PROJECTS&gt;</h2>
+      <div className="p-20 relative">
+        <div className="relative">
+          <div className="text-center text-4xl mb-8 font-Phuda">
+            <h2 className="text-mainTextColor">&lt;PROJECTS&gt;</h2>
           </div>
 
           {projectInfo.map((proj, key) => (
@@ -25,11 +25,14 @@ const Projects = () => {
           <button className="more">
             For more
             <br />
-            <span> PRESS HERE</span>
+            <span className="text-mainTextColor font-Roboto ">
+              {" "}
+              PRESS HERE
+            </span>
           </button>
         </a>
-        <div className="end-title">
-          <h2>{"</PROJECTS>"}</h2>
+        <div className="text-xl mt-20 font-Phuda">
+          <h2 className="text-mainTextColor">{"</PROJECTS>"}</h2>
         </div>
       </div>
     </Element>

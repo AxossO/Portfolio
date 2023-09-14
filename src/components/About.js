@@ -16,18 +16,18 @@ const About = ({ dark }) => {
         initial="hidden"
         animate={isInView ? "show" : "hidden"}
         variants={aboutAnime}
-        className="about"
+        className="min-h-[60vh] relative py-0 pr-40"
       >
         <motion.div
           ref={ref}
           initial="hidden"
           animate={isInView ? "show" : "hidden"}
           variants={aboutAnime}
-          className="about-container"
+          className="flex"
         >
-          <motion.div className="box">
-            <h1>ABOUT ME</h1>
-            <p>
+          <motion.div className="basis-[45%] flex flex-wrap justify-between items-center ">
+            <h1 className="pb-4 text-6xl text-mainTextColor">ABOUT ME</h1>
+            <p className="leading-6 font-Adlam">
               I am a passionate Front-End Developer hailing from Egypt, and I
               find my greatest joy in the art of coding. My journey in web
               development has been an exciting and fulfilling one, driven by a
@@ -35,7 +35,7 @@ const About = ({ dark }) => {
               captivate users on all screens.
             </p>
             <br />
-            <p>
+            <p className="leading-6 font-Adlam">
               My toolkit consists of HTML, CSS, JavaScript, and React, which I
               wield with finesse to craft web experiences that are not only
               visually stunning but also highly functional. I take great pride
@@ -44,7 +44,7 @@ const About = ({ dark }) => {
               excellent user experience for all.
             </p>
             <br />
-            <p>
+            <p className="leading-6 font-Adlam">
               What sets me apart is my unwavering passion for continuous
               learning and growth. In the ever-evolving world of web
               development, I believe that staying ahead means always moving
@@ -57,9 +57,9 @@ const About = ({ dark }) => {
               together.
             </p>
           </motion.div>
-          <div className="skillz-box">
-            <div className="skills">
-              <h2>HTML</h2>
+          <div className="flex-1">
+            <div className="py-8 px-4 f font-Roboto">
+              <h2 className="text-2xl pl-1">HTML</h2>
               <motion.div className="prog">
                 <motion.div
                   variants={lineSkillsAnimate}
@@ -72,8 +72,8 @@ const About = ({ dark }) => {
                 ></motion.div>
               </motion.div>
             </div>
-            <div className="skills">
-              <h2>CSS</h2>
+            <div className="py-8 px-4 f font-Roboto">
+              <h2 className="text-2xl pl-1">CSS</h2>
               <div className="prog">
                 <motion.div
                   ref={ref}
@@ -86,8 +86,8 @@ const About = ({ dark }) => {
                 ></motion.div>
               </div>
             </div>
-            <div className="skills">
-              <h2>Javascript</h2>
+            <div className="py-8 px-4 f font-Roboto">
+              <h2 className="text-2xl pl-1">Javascript</h2>
               <div className="prog">
                 <motion.div
                   ref={ref}
@@ -100,8 +100,8 @@ const About = ({ dark }) => {
                 ></motion.div>
               </div>
             </div>
-            <div className="skills">
-              <h2>React</h2>
+            <div className="py-8 px-4 f font-Roboto">
+              <h2 className="text-2xl pl-1">React</h2>
               <div className="prog">
                 <motion.div
                   ref={ref}

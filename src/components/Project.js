@@ -22,29 +22,42 @@ const Project = ({ proj }) => {
       initial="hidden"
       animate={isInView ? "show" : "hidden"}
       variants={projectAnimate}
-      className="project"
+      className="flex mb-20 justify-center"
     >
       <div
-        className="project-video"
+        className="shadow-2xl max-w-2xl h-[30rem] rounded-3xl"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <video ref={videoRef} muted controls={false}>
+        <video
+          className="w-full h-full object-contain"
+          ref={videoRef}
+          muted
+          controls={false}
+        >
           <source src={proj.imgs} type="video/mp4" />
         </video>
       </div>
-      <div className="project-text">
-        <h3>{proj.title}</h3>
-        <div className="descripton">
-          <p>{proj.description}</p>
+      <div className="font-Roboto">
+        <h3 className="py-0 px-8 text-mainTextColor mb-4 text-xl">
+          {proj.title}
+        </h3>
+        <div className="pl-8">
+          <p className="max-w-[15rem] mx-auto my-0 text-base min-h-[150%] leading-[150%] tracking-[1px] font-Inter">
+            {proj.description}
+          </p>
         </div>
-        <div className="prog-text">
-          <h4>{proj.progLang1}</h4>
-          <h4>{proj.progLang2}</h4>
+        <div className="flex mt-8 justify-center items-center gap-4">
+          <h4 className="font-Roboto font-bold py-1 px-4 rounded-md text-xl text-mainTextColor">
+            {proj.progLang1}
+          </h4>
+          <h4 className="font-Roboto font-bold py-1 px-4 rounded-md text-xl text-mainTextColor">
+            {proj.progLang2}
+          </h4>
         </div>
-        <div className="icon">
+        <div className="flex mt-8 justify-center items-center gap-8">
           <a href={proj.code} target="_blank" rel="noreferrer">
-            <button className="code">
+            <button className="bg-transparent cursor-pointer font-Roboto text-lg flex justify-center items-center gap-1">
               Code
               <svg
                 xmlns="http://www.w3.org/2000/svg"

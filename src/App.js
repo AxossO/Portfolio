@@ -8,7 +8,10 @@ function App() {
   return (
     <div className="App">
       <AnimatePresence mode="wait">
-        <canvas id="canvas"></canvas>
+        <canvas
+          id="canvas"
+          className="absolute left-0 w-full max-w-full h-screen -z-10"
+        ></canvas>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
         </Routes>

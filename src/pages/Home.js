@@ -6,13 +6,10 @@ import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
-import { useLocation } from "react-router-dom";
 
 const Home = () => {
-  const [turnOn, setTurnOn] = useState(true);
+  const [turnOn, setTurnOn] = useState(!false);
   const [dark, setDark] = useState(false);
-  const location = useLocation();
-  console.log(location);
   return (
     <motion.div
       variants={pageAnimation}
@@ -21,9 +18,11 @@ const Home = () => {
       animate="show"
       className={`home-par ${dark ? "yellow" : ""} `}
     >
-      <div className="home-container">
+      <div className="flex">
         <Nav setTurnOn={setTurnOn} turnOn={turnOn} dark={dark} />
-        <div className={`content ${dark ? "black-text" : ""} `}>
+        <div
+          className={`content w-full pl-[11.5rem] ${dark ? "black-text" : ""} `}
+        >
           <Landing
             setTurnOn={setTurnOn}
             turnOn={turnOn}
