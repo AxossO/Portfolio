@@ -34,16 +34,11 @@ const Contact = () => {
               Email ahmadsayed142d@gmail.com
             </div>
             <br />
-<<<<<<< HEAD
             <div className="phone text-[#6f6e6c] font-Roboto ">
               Phone +0200101645177
             </div>
             <br />
             <div className="location text-[#6f6e6c] font-Roboto ">
-=======
-            <div className="phone">Phone +200101645177</div> <br />
-            <div className="location">
->>>>>>> 02c901f590d84471d94f082456178b1a348292e8
               Egypt Cairo <MdLocationPin />
             </div>
           </div>
