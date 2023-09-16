@@ -19,7 +19,7 @@ html::-webkit-scrollbar-track {
 }
 @layer base {
   body {
-    @apply bg-[#1D1D1D] font-sans;
+    @apply overflow-x-hidden bg-[#1D1D1D] font-sans;
   }
   ul {
     @apply list-none p-0;
