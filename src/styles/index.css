@@ -36,7 +36,7 @@ html::-webkit-scrollbar-track {
 }
 
 .land-button {
-  @apply font-Roboto py-4 px-16  border-2 border-mainTextColor rounded-bl-xl rounded-tr-xl text-lg text-mainTextColor transition-all duration-150 ease-out mt-6 hover:bg-mainTextColor hover:text-white;
+  @apply font-Roboto py-4 px-16  border-2 border-mainTextColor rounded-bl-xl rounded-tr-xl text-sm lg:text-lg text-mainTextColor transition-all duration-150 ease-out mt-6 hover:bg-mainTextColor hover:text-white;
 }
 
 .prog {
@@ -47,7 +47,7 @@ html::-webkit-scrollbar-track {
   @apply mt-4 h-3 rounded-3xl relative bg-mainTextColor after:w-1 after:h-1 after:absolute after:-top-9 after:right-6 after:content-[attr(data-progress)];
 }
 .icons-list {
-  @apply grid pt-20 gap-5 min-h-[30vh] text-center font-Montessrat grid-cols-[repeat(auto-fill,minmax(250px,1fr))];
+  @apply grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))]  pt-20   gap-3 lg:gap-5 min-h-[30vh] text-center font-Montessrat lg:grid-cols-[repeat(,minmax(250px,1fr))];
 }
 .hide {
   @apply overflow-hidden;
@@ -73,7 +73,7 @@ html::-webkit-scrollbar-track {
   width: 24px;
   height: 24px;
   transition: all 0.25s;
-  position: relative;
+  /* position: relative; */
 }
 
 .hamburger-top,
@@ -102,14 +102,14 @@ html::-webkit-scrollbar-track {
 .open {
   transform: rotate(90deg);
   transform: translateY(0px);
-  position: fixed;
+  /* position: fixed;
   top: 50px;
-  right: 25px;
+  right: 25px; */
 }
 
 .open .hamburger-top {
   transform: rotate(45deg) translateY(6px) translateX(6px);
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .open .hamburger-middle {
@@ -118,5 +118,5 @@ html::-webkit-scrollbar-track {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
-  background-color: #fff;
+  /* background-color: #fff; */
 }

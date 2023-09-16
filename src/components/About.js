@@ -16,18 +16,20 @@ const About = ({ dark }) => {
         initial="hidden"
         animate={isInView ? "show" : "hidden"}
         variants={aboutAnime}
-        className="min-h-[60vh] relative py-0 pr-40"
+        className="min-h-[60vh] relative py-0 p-0 lg:pr-40"
       >
         <motion.div
           ref={ref}
           initial="hidden"
           animate={isInView ? "show" : "hidden"}
           variants={aboutAnime}
-          className="flex"
+          className="flex flex-col lg:flex-row text-center lg:text-left "
         >
-          <motion.div className="basis-[45%] flex flex-wrap justify-between items-center ">
-            <h1 className="pb-4 text-6xl text-mainTextColor">ABOUT ME</h1>
-            <p className="leading-6 font-Adlam">
+          <motion.div className="basis-[45%] flex flex-wrap justify-between  items-center px-4 lg:px-0 ">
+            <h1 className="pb-4 lg:text-6xl text-5xl text-mainTextColor mx-auto lg:mx-0">
+              ABOUT ME
+            </h1>
+            <p className="leading-6 tracking-wide font-Adlam">
               I am a passionate Front-End Developer hailing from Egypt, and I
               find my greatest joy in the art of coding. My journey in web
               development has been an exciting and fulfilling one, driven by a
@@ -35,7 +37,7 @@ const About = ({ dark }) => {
               captivate users on all screens.
             </p>
             <br />
-            <p className="leading-6 font-Adlam">
+            <p className="leading-6 tracking-wide  font-Adlam">
               My toolkit consists of HTML, CSS, JavaScript, and React, which I
               wield with finesse to craft web experiences that are not only
               visually stunning but also highly functional. I take great pride
@@ -44,7 +46,7 @@ const About = ({ dark }) => {
               excellent user experience for all.
             </p>
             <br />
-            <p className="leading-6 font-Adlam">
+            <p className="leading-6 tracking-wide  font-Adlam">
               What sets me apart is my unwavering passion for continuous
               learning and growth. In the ever-evolving world of web
               development, I believe that staying ahead means always moving

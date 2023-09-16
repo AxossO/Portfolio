@@ -15,7 +15,7 @@ export const HoverNavSvg = ({ children }) => {
 };
 
 export const Letter = ({ children }) => {
-  const [hovered, setHovered] = React.useState(false);
+  const [hovered, setHovered] = useState(false);
   const toggleHover = () => setHovered(!hovered);
   return (
     <span

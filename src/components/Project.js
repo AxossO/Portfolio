@@ -22,7 +22,7 @@ const Project = ({ proj }) => {
       initial="hidden"
       animate={isInView ? "show" : "hidden"}
       variants={projectAnimate}
-      className="flex mb-20 justify-center"
+      className="flex mb-20 justify-center flex-col-reverse text-center lg:text-left lg:flex-row"
     >
       <div
         className="shadow-2xl max-w-2xl h-[30rem] rounded-3xl"
@@ -38,12 +38,12 @@ const Project = ({ proj }) => {
           <source src={proj.imgs} type="video/mp4" />
         </video>
       </div>
-      <div className="font-Roboto">
+      <div className="font-Roboto pt-12 lg:pt-0">
         <h3 className="py-0 px-8 text-mainTextColor mb-4 text-xl">
           {proj.title}
         </h3>
-        <div className="pl-8">
-          <p className="max-w-[15rem] mx-auto my-0 text-base min-h-[150%] leading-[150%] tracking-[1px] font-Inter">
+        <div className="p-0 lg:pl-8">
+          <p className="max-w-none px-6 lg:px-0 h-auto lg:max-w-[15rem] mx-auto my-0 text-base lg:min-h-[150%] leading-[150%]   tracking-[1px] font-Inter">
             {proj.description}
           </p>
         </div>

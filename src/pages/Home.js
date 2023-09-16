@@ -8,7 +8,7 @@ import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 
 const Home = () => {
-  const [turnOn, setTurnOn] = useState(!false);
+  const [turnOn, setTurnOn] = useState(!true);
   const [dark, setDark] = useState(false);
   return (
     <motion.div
@@ -21,7 +21,9 @@ const Home = () => {
       <div className="flex">
         <Nav setTurnOn={setTurnOn} turnOn={turnOn} dark={dark} />
         <div
-          className={`content w-full pl-[11.5rem] ${dark ? "black-text" : ""} `}
+          className={`content p-2 md:p-5 w-full  lg:pl-[11.5rem] ${
+            dark ? "black-text" : ""
+          } `}
         >
           <Landing
             setTurnOn={setTurnOn}

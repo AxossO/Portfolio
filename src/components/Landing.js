@@ -3,7 +3,6 @@ import { fade, titleAnime } from "../animation";
 import "./HoverAnimation";
 import { Element, Link } from "react-scroll";
 import DarkMode from "./DarkMode";
-import { RxHamburgerMenu } from "react-icons/rx";
 
 const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
   const turnNavHandler = () => {
@@ -12,7 +11,7 @@ const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
 
   return (
     <Element name="home">
-      <motion.div className="min-h-screen flex items-center pl-6 relative">
+      <motion.div className="min-h-[87vh]   lg:min-h-screen flex items-center pl-6 relative">
         <DarkMode
           turnOn={turnOn}
           setTurnOn={setTurnOn}
@@ -22,32 +21,30 @@ const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
         <div
           className="top-0 absolute text-4xl cursor-pointer hidden"
           onClick={turnNavHandler}
-        >
-          <RxHamburgerMenu />
-        </div>
-        <motion.div className="text-5xl space-y-8">
+        ></div>
+        <motion.div className="text-2xl md:text-4xl md:text-center md:flex-1 lg:text-5xl space-y-8 text-center lg:text-left">
           <div className={`hide text-animate-hover`}>
             <motion.h1
               variants={titleAnime}
               whileHover="hover"
-              className="text-8xl"
+              className="text-7xl md:text-8xl "
             >
               Hello,
             </motion.h1>
           </div>
           <div className={`hide text-animate-hover`}>
-            <motion.h1 variants={titleAnime} className=" text-8xl">
+            <motion.h1 variants={titleAnime} className="text-7xl md:text-8xl">
               I'm Ahmad,
             </motion.h1>
           </div>
 
           <div className={`hide text-animate-hover`}>
-            <motion.h1 variants={titleAnime} className=" text-8xl">
+            <motion.h1 variants={titleAnime} className="text-7xl md:text-8xl">
               Web Deveolper
             </motion.h1>
           </div>
           <motion.p
-            className="text-animate-hover text-2xl  tracking-toWide  text-whiteColor"
+            className="text-xl text-animate-hover md:text-2xl  tracking-toWide  text-whiteColor"
             variants={fade}
           >
             Frontend Developer
@@ -60,7 +57,7 @@ const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
             offset={-70}
             duration={600}
           >
-            <motion.button variants={fade} className="land-button ">
+            <motion.button variants={fade} className="land-button  ">
               Contact Me
             </motion.button>
           </Link>

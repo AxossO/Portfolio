@@ -6,7 +6,7 @@ const IconsList = ({ data }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { margin: "1px 0px 0px 0px" });
   return (
-    <motion.div className="icons-list ">
+    <motion.div className="icons-list  ">
       <motion.div className="shadow-2xl  relative">
         <motion.div
           ref={ref}
