@@ -20,9 +20,9 @@ const Contact = () => {
         initial="hidden"
         animate={isInView ? "show" : "hidden"}
         variants={fade}
-        className="py-4 px-20"
+        className="py-4 px-0 text-center lg:px-20"
       >
-        <h2 className="font-Phuda text-mainTextColor text-6xl font-bold inline border-b-2 border-[#808080]">
+        <h2 className="font-Phuda   text-mainTextColor text-6xl font-bold inline border-b-2 border-[#808080]">
           Contact
         </h2>
         <p className="py-6 px-0">
@@ -38,12 +38,12 @@ const Contact = () => {
               Phone +0200101645177
             </div>
             <br />
-            <div className="location text-[#6f6e6c] font-Roboto ">
+            <div className="location text-[#6f6e6c] font-Roboto flex flex-row items-center justify-center ">
               Egypt Cairo <MdLocationPin />
             </div>
           </div>
           <form
-            className="flex flex-col w-1/2 md:w-full max-w-xl mt-8 h-full "
+            className="flex flex-col w-full max-w-xs lg:w-1/2 lg:max-w-lg mt-8 h-full "
             onSubmit={checkHandler}
             action="https://getform.io/f/d543f8d8-82c1-4e35-8ed6-1a9807241311"
             method="POST"
@@ -61,7 +61,7 @@ const Contact = () => {
               placeholder="Enter your email"
             ></input>
             <textarea
-              className="py-2 px-4 min-h-[38vh] bg-transparent border-2 rounded-md focus:outline-none my-2 mx-0"
+              className="py-2 px-4 min-h-[38vh]  bg-transparent border-2 rounded-md focus:outline-none my-2 mx-0"
               name="message"
             ></textarea>
             <button

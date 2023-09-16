@@ -25,7 +25,7 @@ const Project = ({ proj }) => {
       className="flex mb-20 justify-center flex-col-reverse text-center lg:text-left lg:flex-row"
     >
       <div
-        className="shadow-2xl max-w-2xl h-[30rem] rounded-3xl"
+        className="shadow-2xl max-w-2xl lg:h-[30rem] pt-14 lg:pt-0 rounded-3xl"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >

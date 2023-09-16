@@ -47,7 +47,7 @@ html::-webkit-scrollbar-track {
   @apply mt-4 h-3 rounded-3xl relative bg-mainTextColor after:w-1 after:h-1 after:absolute after:-top-9 after:right-6 after:content-[attr(data-progress)];
 }
 .icons-list {
-  @apply grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))]  pt-20   gap-3 lg:gap-5 min-h-[30vh] text-center font-Montessrat lg:grid-cols-[repeat(,minmax(250px,1fr))];
+  @apply grid  pt-20 px-3 lg:px-0   gap-0 lg:gap-5 min-h-[30vh] text-center font-Montessrat lg:grid-cols-[repeat(auto-fill,minmax(250px,1fr))];
 }
 .hide {
   @apply overflow-hidden;

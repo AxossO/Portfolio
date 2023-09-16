@@ -25,7 +25,7 @@ const Projects = () => {
           rel="noreferrer"
         >
           <button className="more">
-            For more
+            More
             <br />
             <span className="text-mainTextColor font-Roboto "> PRESS HERE</span>
           </button>
