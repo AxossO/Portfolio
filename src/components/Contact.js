@@ -20,7 +20,7 @@ const Contact = () => {
         initial="hidden"
         animate={isInView ? "show" : "hidden"}
         variants={fade}
-        className="py-4 px-0 text-center lg:px-20"
+        className="py-4 px-0 text-center xl:px-20"
       >
         <h2 className="font-Phuda   text-mainTextColor text-6xl font-bold inline border-b-2 border-[#808080]">
           Contact
@@ -43,7 +43,7 @@ const Contact = () => {
             </div>
           </div>
           <form
-            className="flex flex-col w-full max-w-xs lg:w-1/2 lg:max-w-lg mt-8 h-full "
+            className="flex flex-col w-full max-w-xs xl:w-1/2 xl:max-w-lg mt-8 h-full "
             onSubmit={checkHandler}
             action="https://getform.io/f/d543f8d8-82c1-4e35-8ed6-1a9807241311"
             method="POST"

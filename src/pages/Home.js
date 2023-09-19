@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import MobileMenu from "../components/MobileMenu";
 
 const Home = () => {
   const [turnOn, setTurnOn] = useState(!true);
@@ -20,6 +21,7 @@ const Home = () => {
     >
       <div className="flex">
         <Nav setTurnOn={setTurnOn} turnOn={turnOn} dark={dark} />
+        <MobileMenu   turnOn={turnOn} dark={dark} setDark={setDark} />
         <div
           className={`content p-2 md:p-5 w-full  lg:pl-[11.5rem] ${
             dark ? "black-text" : ""

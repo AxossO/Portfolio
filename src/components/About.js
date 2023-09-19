@@ -2,8 +2,9 @@ import React, { useRef, useState } from "react";
 import { Utli } from "../utli";
 import IconsList from "./IconsList";
 import { motion, useInView } from "framer-motion";
-import { aboutAnime, lineSkillsAnimate } from "../animation";
+import { toLeft, toRight } from "../animation";
 import { Element } from "react-scroll";
+import { CompImage } from "./HoverNavSvg";
 const About = ({ dark }) => {
   const [data] = useState(Utli);
   const ref = useRef(null);
@@ -11,22 +12,16 @@ const About = ({ dark }) => {
 
   return (
     <Element name="about">
-      <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={isInView ? "show" : "hidden"}
-        variants={aboutAnime}
-        className="min-h-[60vh] relative py-0 p-0 lg:pr-40"
-      >
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={isInView ? "show" : "hidden"}
-          variants={aboutAnime}
-          className="flex flex-col lg:flex-row text-center lg:text-left "
-        >
-          <motion.div className="basis-[45%] flex flex-wrap justify-between  items-center px-4 lg:px-0 ">
-            <h1 className="pb-4 lg:text-6xl text-5xl text-mainTextColor mx-auto lg:mx-0">
+      <motion.div className="min-h-[60vh] relative py-0 p-0 xl:pr-40 ">
+        <motion.div className="flex flex-col xl:flex-row space-y-10 xl-space-y-0  text-center xl:text-left ">
+          <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={isInView ? "show" : "hidden"}
+            variants={toRight}
+            className="basis-[45%] flex flex-wrap justify-between  items-center px-4 xl:px-0 "
+          >
+            <h1 className="pb-4 xl:text-6xl text-5xl text-mainTextColor mx-auto xl:mx-0">
               ABOUT ME
             </h1>
             <p className="leading-6 tracking-wide font-Adlam">
@@ -59,7 +54,16 @@ const About = ({ dark }) => {
               together.
             </p>
           </motion.div>
-          <div className="flex-1">
+          <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={isInView ? "show" : "hidden"}
+            variants={toLeft}
+            className="flex-1"
+          >
+            <CompImage />
+          </motion.div>
+          {/* <div className="flex-1">
             <div className="py-8 px-4 f font-Roboto">
               <h2 className="text-2xl pl-1">HTML</h2>
               <motion.div className="prog">
@@ -116,7 +120,7 @@ const About = ({ dark }) => {
                 ></motion.div>
               </div>
             </div>
-          </div>
+          </div> */}
         </motion.div>
         <div className="icons-list">
           {data.map((data, key) => (

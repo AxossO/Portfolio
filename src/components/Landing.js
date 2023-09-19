@@ -11,24 +11,15 @@ const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
 
   return (
     <Element name="home">
-      <motion.div className="min-h-[87vh]   lg:min-h-screen flex items-center lg:pl-6 relative">
-        <DarkMode
-          turnOn={turnOn}
-          setTurnOn={setTurnOn}
-          setDark={setDark}
-          dark={dark}
-        />
+      <motion.div className="min-h-[87vh]   xl:min-h-screen flex items-center xl:pl-6 relative">
+        <DarkMode turnOn={turnOn} setTurnOn={setTurnOn} dark={dark} />
         <div
           className="top-0 absolute text-4xl cursor-pointer hidden"
           onClick={turnNavHandler}
         ></div>
-        <motion.div className="text-2xl md:text-4xl md:text-center md:flex-1 lg:text-5xl space-y-8 text-center lg:text-left">
+        <motion.div className="text-2xl sm:text-4xl sm:text-center sm:flex-1 xl:text-5xl space-y-8 text-center xl:text-left">
           <div className={`hide text-animate-hover`}>
-            <motion.h1
-              variants={titleAnime}
-              whileHover="hover"
-              className="text-7xl md:text-8xl "
-            >
+            <motion.h1 variants={titleAnime} className="text-7xl md:text-8xl ">
               Hello,
             </motion.h1>
           </div>
@@ -57,7 +48,10 @@ const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
             offset={-70}
             duration={600}
           >
-            <motion.button variants={fade} className="land-button  ">
+            <motion.button
+              variants={fade}
+              className="land-button focus:outline-none "
+            >
               Contact Me
             </motion.button>
           </Link>

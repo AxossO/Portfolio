@@ -7,10 +7,10 @@ const Projects = () => {
   const [projectInfo] = useState(projects);
   return (
     <Element name="projects">
-      <div className=" p-0 lg:p-20 relative">
+      <div className=" p-0 xl:p-20 relative">
         <div className="relative">
           <div className="text-center text-4xl mb-8 font-Phuda">
-            <h2 className="text-mainTextColor pt-12 lg:pt-0">
+            <h2 className="text-mainTextColor pt-12 xl:pt-0">
               &lt;PROJECTS&gt;
             </h2>
           </div>

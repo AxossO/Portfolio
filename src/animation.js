@@ -38,30 +38,22 @@ export const titleAnime = {
 export const fade = {
   hidden: {
     opacity: 0,
+    y: -200,
   },
   show: {
     opacity: 1,
+    y: 0,
     transition: {
       duration: 1,
       ease: "easeOut",
     },
   },
-};
-
-export const iconLineAnimate = {
-  hidden: {
-    opacity: 0,
-    transition: {
-      duration: 0.75,
-    },
-  },
-  show: {
+  exit: {
     opacity: 1,
-    width: "100%",
-    left: "0%",
-    right: "100%",
+    y: 0,
     transition: {
-      duration: 1,
+      duration: 2,
+      ease: "easeOut",
     },
   },
 };
@@ -159,6 +151,67 @@ export const aboutAnime = {
     transition: {
       duration: 0.75,
       ease: "easeOut",
+    },
+  },
+};
+
+export const toRight = {
+  hidden: {
+    opacity: 0,
+    x: -500,
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.75,
+      ease: "easeOut",
+    },
+  },
+};
+export const toLeft = {
+  hidden: {
+    opacity: 0,
+    x: 500,
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.75,
+      ease: "easeOut",
+    },
+  },
+};
+
+export const fromZeroToHero = {
+  hidden: {
+    opacity: 0,
+    scale: 0,
+  },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+      when: "beforeChildren",
+      staggerChildren: 0.25,
+    },
+  },
+};
+export const iconLineAnimate = {
+  hidden: {
+    opacity: 0,
+    scale: 0,
+  },
+  show: {
+    opacity: 1,
+    scale: 1,
+    width: "100%",
+    left: "0%",
+    right: "100%",
+    transition: {
+      duration: 1,
     },
   },
 };

@@ -1,700 +1,700 @@
-:root {
-  --main-text-color: #00c3f5;
-  // --main-text-color: #00e2d5;
-  --fav-text-color: #00c3f5;
-  --light-text-color: black;
-  --dark-text-color: #4e4d4e;
-  // --title-color: #00e2d5;
-  --white-color: white;
-}
-// TW
-// * {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-//   color: white;
+// :root {
+//   --main-text-color: #00c3f5;
+//   // --main-text-color: #00e2d5;
+//   --fav-text-color: #00c3f5;
+//   --light-text-color: black;
+//   --dark-text-color: #4e4d4e;
+//   // --title-color: #00e2d5;
+//   --white-color: white;
 // }
+// // TW
+// // * {
+// //   margin: 0;
+// //   padding: 0;
+// //   box-sizing: border-box;
+// //   color: white;
+// // }
 
-// TW
-// html {
-//   &::-webkit-scrollbar {
-//     width: 0.5rem;
+// // TW
+// // html {
+// //   &::-webkit-scrollbar {
+// //     width: 0.5rem;
+// //   }
+// //   &::-webkit-scrollbar-thumb {
+// //     background-color: #66c5fc;
+// //   }
+// //   &::-webkit-scrollbar-track {
+// //     background-color: rgb(48, 48, 48);
+// //   }
+// // }
+// // body {
+// //   background: rgb(29, 29, 29);
+// //   font-family: sans-serif;
+// // }
+
+// // ul {
+// //   list-style: none;
+// //   padding: 0;
+// // }
+// // a {
+// //   text-decoration: none;
+// // }
+// // li {
+// //   font-family: "Roboto Mono", monospace;
+// //   padding: 1rem 0rem;
+// //   color: var(--white-color);
+// // }
+// // h1 {
+// //   color: var(--white-color);
+// //   font-family: "ADLaM Display", cursive;
+// // }
+// // .home-container {
+// //   display: flex;
+// // }
+
+// // .content {
+// //   padding-left: 11.5rem;
+// //   width: 100%;
+// // }
+
+// // #canvas {
+// //   position: absolute;
+// //   left: 0;
+// //   width: 100%;
+// //   max-width: 100%;
+// //   height: 100vh;
+// //   z-index: -1;
+// // }
+// // .mail {
+// //   width: 38px;
+// //   height: 38px;
+// // }
+// // .nav {
+// //   position: fixed;
+// //   height: 100%;
+// //   max-width: 10rem;
+// //   background-color: #191919;
+// //   z-index: 88;
+// //   transition: 1s ease-out;
+
+// //   .logo {
+// //     min-height: 28vh;
+// //     padding: 2rem 1rem;
+// //     line-height: 1.2;
+// //     cursor: pointer;
+
+// //     span {
+// //       font-family: "ADLaM Display", cursive;
+
+// //       display: flex;
+// //       justify-content: center;
+// //       align-items: center;
+// //       color: var(--fav-text-color);
+// //     }
+// //   }
+// //   .nav-list {
+// //     position: relative;
+// //     .nav-container {
+// //       padding: 3rem 0rem;
+// //       font-size: 20px;
+// //       text-align: center;
+// //       ul {
+// //         overflow: hidden;
+// //       }
+// //       li {
+// //         cursor: pointer;
+// //         border-top: 1px solid #6f6e6c;
+// //       }
+// //     }
+// //     .nav-social {
+// //       ul {
+// //         display: flex;
+// //         justify-content: space-around;
+// //         align-items: center;
+// //         flex-wrap: wrap;
+// //         li {
+// //           cursor: pointer;
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+// // .landing {
+// //   min-height: 100vh;
+// //   display: flex;
+// //   align-items: center;
+// //   padding-left: 1.5rem;
+// //   position: relative;
+// //   .hello {
+// //     font-size: 3rem;
+// //     line-height: 0.8;
+// //     letter-spacing: -3px;
+// //     position: relative;
+// //     width: auto;
+// //     font-family: "ADLaM Display", cursive;
+
+// //     h1 {
+// //       padding-bottom: 3rem;
+// //     }
+// //     button {
+// //       font-family: "Roboto Mono", monospace;
+// //       padding: 1rem 4rem;
+// //       border: 1px solid var(--main-text-color);
+// //       border-bottom-left-radius: 10px;
+// //       border-top-right-radius: 10px;
+// //       font-weight: bold;
+// //       font-size: 1.1rem;
+// //       cursor: pointer;
+// //       background: transparent;
+// //       color: var(--main-text-color);
+// //       transition: all 0.5s ease;
+// //       margin-top: 2rem;
+// //       &:hover {
+// //         background-color: var(--main-text-color);
+// //         color: white;
+// //       }
+// //     }
+// //     p {
+// //       font-size: 2rem;
+// //       letter-spacing: 5px;
+// //       color: var(--white-color);
+// //     }
+// //   }
+// // }
+
+// // .about {
+// //   min-height: 60vh;
+// //   position: relative;
+// //   padding: 0rem 2rem;
+// //   padding-right: 10rem;
+// //   .about-container {
+// //     display: flex;
+// //     .box {
+// //       flex-basis: 45%;
+// //       display: flex;
+// //       flex-wrap: wrap;
+// //       justify-content: space-between;
+// //       align-items: center;
+
+// //       h1 {
+// //         padding-bottom: 1rem;
+// //         font-size: 3.8rem;
+// //         color: var(--main-text-color);
+// //       }
+// //       p {
+// //         line-height: 1.5;
+// //         font-family: "ADLaM Display";
+// //       }
+// //     }
+// //     .skillz-box {
+// //       flex: 1;
+// //       .skills {
+// //         padding: 2rem 1rem;
+// //         font-family: "Roboto Mono", monospace;
+// //         h2 {
+// //           font-size: 1.6rem;
+// //           padding-left: 5px;
+// //         }
+// //         .prog {
+// //           background-color: #dedadc;
+// //           height: 10px;
+// //           border-radius: 15px;
+// //         }
+// //         .line {
+// //           margin-top: 1rem;
+// //           height: 10px;
+// //           border-radius: 20px;
+// //           position: relative;
+// //           background-color: var(--main-text-color);
+// //           &::after {
+// //             content: attr(data-progress);
+// //             width: 5px;
+// //             height: 5px;
+// //             position: absolute;
+// //             top: -37px;
+// //             right: 24px;
+// //           }
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+// // .icons-list {
+// //   display: grid;
+// //   padding-top: 5rem;
+// //   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+// //   gap: 20px;
+// //   min-height: 30vh;
+// //   text-align: center;
+// //   font-family: "Montserrat", sans-serif;
+// // }
+// // .icons-box {
+// //   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+// //   position: relative;
+// // }
+// //   .icons-line {
+// //     width: 5px;
+// //     height: 5px;
+// //     background-color: var(--main-text-color);
+// //     left: 50%;
+// //     position: absolute;
+// //     display: block;
+// //   }
+
+// // &::before {
+// //   content: "";
+// //   width: 20px;
+// //   background-color: greenyellow;
+// //   height: 20px;
+// //   left: 50%;
+// //   top: 0;
+// // }
+// // &::after {
+// //   content: "";
+// //   width: 5px;
+// //   background-color: orange;
+// //   height: 5px;
+// //   position: absolute;
+// //   left: 50%;
+// //   top: 0;
+// // }
+// // }
+// // .icons-svg {
+// //   height: 13vh;
+// //   width: 100%;
+// //   margin: 1rem 0rem;
+// //   img {
+// //     background-color: var(--main-text-color);
+// //   }
+// // }
+// // }
+
+// // .projects {
+// //   padding: 5rem;
+// //   position: relative;
+
+// //   .project-container {
+
+// //     position: relative;
+// //     .project {
+// //       display: flex;
+// //       margin-bottom: 5rem;
+// //       justify-content: center;
+// //       .project-text {
+
+// //         font-family: "Roboto Mono", monospace;
+// //         .descripton {
+// //           padding: 0rem 0rem 0rem 2rem;
+
+// //           p {
+// //             max-width: 15rem;
+// //             margin: 0 auto;
+// //             font-size: 1rem;
+// //             min-height: 25vh;
+// //             line-height: 150%;
+// //             letter-spacing: 1px;
+// //             font-family: "Inter", sans-serif;
+// //           }
+// //         }
+// //         h3 {
+// //           padding: 0rem 2rem;
+// //           color: var(--main-text-color);
+// //           margin-bottom: 1rem;
+// //           font-size: 1.2rem;
+// //         }
+
+// //         .prog-text,
+// //         .icon {
+// //           display: flex;
+// //           margin-top: 2rem;
+// //           justify-content: center;
+// //           align-items: center;
+// //           gap: 1rem;
+// //         }
+// //         .prog-text h4 {
+// //           font-family: "Roboto Mono", monospace;
+// //         }
+// //         .icon {
+// //           gap: 2rem;
+// //         }
+// //         button {
+// //           border: none;
+// //           background: none;
+// //           cursor: pointer;
+// //           font-family: "Roboto Mono", monospace;
+// //           font-size: 1.1rem;
+// //         }
+// //         .code {
+// //           display: flex;
+// //           justify-content: center;
+// //           align-items: center;
+// //           gap: 5px;
+// //         }
+// //         h4 {
+// //           font-weight: bold;
+// //           padding: 5px 1rem;
+// //           border-radius: 5px;
+// //           font-size: 1.2rem;
+// //           color: var(--main-text-color);
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+// // .project-video {
+// //   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+// //   max-width: 40rem;
+// //   height: 30rem;
+// //   border-radius: 20px;
+// //   video {
+// //     width: 100%;
+// //     height: 100%;
+// //     object-fit: contain;
+// //   }
+// // }
+// // .hide {
+// //   overflow: hidden;
+// // }
+// // .right-nav-contant {
+// //   .box {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: flex-end;
+// //     padding: 10px 0rem;
+// //     gap: 1rem;
+// //     font-family: "ADLaM Display", cursive;
+
+// //     h4 {
+// //       font-size: 1.2rem;
+// //       color: var(--main-text-color);
+// //     }
+// //     svg {
+// //       border: 1px solid black;
+// //       background-color: var(--white-color);
+// //       border-radius: 50%;
+// //       cursor: pointer;
+// //     }
+// //   }
+// // }
+
+// // .title {
+// //   text-align: center;
+// //   font-size: 2.2rem;
+// //   margin-bottom: 2rem;
+// //   font-family: "Phudu", cursive;
+// //   h2 {
+// //     color: var(--main-text-color);
+// //   }
+// // }
+// // .end-title {
+// //   font-size: 1.2rem;
+// //   margin-top: 5rem;
+// //   font-family: "Phudu", cursive;
+// //   h2 {
+// //     color: var(--main-text-color);
+// //   }
+// // }
+
+// // .toggle {
+// //   top: 0;
+// //   position: absolute;
+// //   font-size: 2rem;
+// //   cursor: pointer;
+// //   display: none;
+// // }
+// // .dark {
+// //   position: absolute;
+// //   top: 0;
+// //   right: 50%;
+// //   cursor: pointer;
+// //   svg {
+// //     background-color: #00c3f5;
+// //   }
+// // }
+
+// // .visible {
+// //   transform: translateX(-300%);
+// //   transition: 1s ease-out;
+// //   display: block !important;
+// // }
+
+// @media screen and (min-width: 892px) {
+//   .dark {
+//     padding-right: 10rem;
+//     right: 0;
 //   }
-//   &::-webkit-scrollbar-thumb {
-//     background-color: #66c5fc;
-//   }
-//   &::-webkit-scrollbar-track {
-//     background-color: rgb(48, 48, 48);
-//   }
-// }
-// body {
-//   background: rgb(29, 29, 29);
-//   font-family: sans-serif;
-// }
-
-// ul {
-//   list-style: none;
-//   padding: 0;
-// }
-// a {
-//   text-decoration: none;
-// }
-// li {
-//   font-family: "Roboto Mono", monospace;
-//   padding: 1rem 0rem;
-//   color: var(--white-color);
-// }
-// h1 {
-//   color: var(--white-color);
-//   font-family: "ADLaM Display", cursive;
-// }
-// .home-container {
-//   display: flex;
-// }
-
-// .content {
-//   padding-left: 11.5rem;
-//   width: 100%;
-// }
-
-// #canvas {
-//   position: absolute;
-//   left: 0;
-//   width: 100%;
-//   max-width: 100%;
-//   height: 100vh;
-//   z-index: -1;
-// }
-// .mail {
-//   width: 38px;
-//   height: 38px;
-// }
-// .nav {
-//   position: fixed;
-//   height: 100%;
-//   max-width: 10rem;
-//   background-color: #191919;
-//   z-index: 88;
-//   transition: 1s ease-out;
-
-//   .logo {
-//     min-height: 28vh;
-//     padding: 2rem 1rem;
-//     line-height: 1.2;
-//     cursor: pointer;
-
-//     span {
-//       font-family: "ADLaM Display", cursive;
-
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       color: var(--fav-text-color);
-//     }
-//   }
-//   .nav-list {
-//     position: relative;
-//     .nav-container {
-//       padding: 3rem 0rem;
-//       font-size: 20px;
-//       text-align: center;
-//       ul {
-//         overflow: hidden;
-//       }
-//       li {
-//         cursor: pointer;
-//         border-top: 1px solid #6f6e6c;
-//       }
-//     }
-//     .nav-social {
-//       ul {
-//         display: flex;
-//         justify-content: space-around;
-//         align-items: center;
-//         flex-wrap: wrap;
-//         li {
-//           cursor: pointer;
-//         }
-//       }
-//     }
+//   .moon {
+//     padding: 1rem 0rem;
+//     font-size: 2rem;
 //   }
 // }
 
-// .landing {
-//   min-height: 100vh;
-//   display: flex;
-//   align-items: center;
-//   padding-left: 1.5rem;
-//   position: relative;
-//   .hello {
-//     font-size: 3rem;
-//     line-height: 0.8;
-//     letter-spacing: -3px;
-//     position: relative;
-//     width: auto;
-//     font-family: "ADLaM Display", cursive;
-
-//     h1 {
-//       padding-bottom: 3rem;
-//     }
-//     button {
-//       font-family: "Roboto Mono", monospace;
-//       padding: 1rem 4rem;
-//       border: 1px solid var(--main-text-color);
-//       border-bottom-left-radius: 10px;
-//       border-top-right-radius: 10px;
-//       font-weight: bold;
-//       font-size: 1.1rem;
-//       cursor: pointer;
-//       background: transparent;
-//       color: var(--main-text-color);
-//       transition: all 0.5s ease;
-//       margin-top: 2rem;
-//       &:hover {
-//         background-color: var(--main-text-color);
-//         color: white;
-//       }
-//     }
-//     p {
-//       font-size: 2rem;
-//       letter-spacing: 5px;
-//       color: var(--white-color);
-//     }
-//   }
-// }
-
-// .about {
-//   min-height: 60vh;
-//   position: relative;
-//   padding: 0rem 2rem;
-//   padding-right: 10rem;
-//   .about-container {
-//     display: flex;
-//     .box {
-//       flex-basis: 45%;
-//       display: flex;
-//       flex-wrap: wrap;
-//       justify-content: space-between;
-//       align-items: center;
-
-//       h1 {
-//         padding-bottom: 1rem;
-//         font-size: 3.8rem;
-//         color: var(--main-text-color);
-//       }
-//       p {
-//         line-height: 1.5;
-//         font-family: "ADLaM Display";
-//       }
-//     }
-//     .skillz-box {
-//       flex: 1;
-//       .skills {
-//         padding: 2rem 1rem;
-//         font-family: "Roboto Mono", monospace;
-//         h2 {
-//           font-size: 1.6rem;
-//           padding-left: 5px;
-//         }
-//         .prog {
-//           background-color: #dedadc;
-//           height: 10px;
-//           border-radius: 15px;
-//         }
-//         .line {
-//           margin-top: 1rem;
-//           height: 10px;
-//           border-radius: 20px;
-//           position: relative;
-//           background-color: var(--main-text-color);
-//           &::after {
-//             content: attr(data-progress);
-//             width: 5px;
-//             height: 5px;
-//             position: absolute;
-//             top: -37px;
-//             right: 24px;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-// .icons-list {
-//   display: grid;
-//   padding-top: 5rem;
-//   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-//   gap: 20px;
-//   min-height: 30vh;
-//   text-align: center;
-//   font-family: "Montserrat", sans-serif;
-// }
-// .icons-box {
-//   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-//   position: relative;
-// }
-//   .icons-line {
-//     width: 5px;
-//     height: 5px;
-//     background-color: var(--main-text-color);
-//     left: 50%;
+// @media screen and (max-width: 510px) {
+//   // .landing {
+//   //   min-height: 87vh;
+//   // }
+//   // .hello {
+//   //   font-size: 1.7rem !important;
+//   //   text-align: center;
+//   // }
+//   // .content {
+//   //   padding: 2rem !important;
+//   // }
+//   .toggle {
 //     position: absolute;
+//     right: 0;
+//   }
+// }
+// @media screen and (max-width: 890px) {
+//   .toggle {
 //     display: block;
+//     right: 0;
 //   }
-
-// &::before {
-//   content: "";
-//   width: 20px;
-//   background-color: greenyellow;
-//   height: 20px;
-//   left: 50%;
-//   top: 0;
-// }
-// &::after {
-//   content: "";
-//   width: 5px;
-//   background-color: orange;
-//   height: 5px;
-//   position: absolute;
-//   left: 50%;
-//   top: 0;
-// }
-// }
-// .icons-svg {
-//   height: 13vh;
-//   width: 100%;
-//   margin: 1rem 0rem;
-//   img {
-//     background-color: var(--main-text-color);
+//   .nav {
+//     display: none;
+//     transform: translateX(0);
+//     transition: 1s ease-out;
 //   }
+//   // .content {
+//   //   // padding: 5rem 5rem;
+//   //   .hello {
+//   //     font-size: 2rem;
+//   //     text-align: center;
+//   //     flex: 1;
+//   //   }
+//   // }
 // }
-// }
 
-// .projects {
-//   padding: 5rem;
-//   position: relative;
+// // .contact {
+// //   padding: 1rem 5rem;
 
-//   .project-container {
+// //   h2 {
+// //     font-family: "Phudu", cursive;
 
-//     position: relative;
-//     .project {
-//       display: flex;
-//       margin-bottom: 5rem;
-//       justify-content: center;
-//       .project-text {
+// //     color: var(--main-text-color);
+// //     font-size: 3.8rem;
+// //     font-weight: bold;
+// //     display: inline;
+// //     border-bottom: 4px solid #808080;
+// //   }
+// //   p {
+// //     padding: 1.5rem 0rem;
+// //   }
+// //   .contact-container {
+// //     display: flex;
+// //     justify-content: center;
+// //     align-items: center;
+// //     flex-direction: column;
+// //     position: relative;
+// //     .contact-information {
+// //       position: absolute;
+// //       div {
+// //         color: #6f6e6c;
+// //         font-family: "Roboto Mono";
+// //       }
+// //     }
+// //     form {
+// //       display: flex;
+// //       flex-direction: column;
+// //       width: 100%;
+// //       max-width: 37rem;
+// //       margin-top: 2rem;
+// //       height: 100%;
+// //       @media screen and (min-width) {
+// //         form {
+// //           width: 50%;
+// //         }
+// //       }
+// //     }
+// //     .message,
+// //     textarea {
+// //       min-height: 35vh;
+// //     }
+// //     input,
+// //     textarea {
+// //       padding: 0.5rem 1rem;
+// //       background-color: transparent;
+// //       border-width: 2px;
+// //       border-radius: 0.375rem;
+// //       color: #ffffff;
+// //       outline: none;
+// //       margin: 8px 0rem;
+// //     }
+// //     .contact-button {
+// //       font-family: "ADLaM Display", cursive;
+// //       background-color: var(--main-text-color);
+// //       border: none;
+// //       color: #ffffff !important;
+// //       padding: 0rem 1.5rem;
+// //       margin: 2rem auto;
+// //       display: flex;
+// //       align-items: center;
+// //       justify-content: center;
+// //       border-radius: 10px;
+// //       transition: bounce 0.3s ease-in-out;
+// //       cursor: pointer;
+// //       animation: bounce 1.5s infinite;
+// //       padding: 15px;
+// //       &:hover {
+// //         transform: scale(1.2);
+// //       }
+// //     }
+// //   }
+// // }
 
-//         font-family: "Roboto Mono", monospace;
-//         .descripton {
-//           padding: 0rem 0rem 0rem 2rem;
-
-//           p {
-//             max-width: 15rem;
-//             margin: 0 auto;
-//             font-size: 1rem;
-//             min-height: 25vh;
-//             line-height: 150%;
-//             letter-spacing: 1px;
-//             font-family: "Inter", sans-serif;
-//           }
-//         }
-//         h3 {
-//           padding: 0rem 2rem;
-//           color: var(--main-text-color);
-//           margin-bottom: 1rem;
-//           font-size: 1.2rem;
-//         }
-
-//         .prog-text,
-//         .icon {
-//           display: flex;
-//           margin-top: 2rem;
-//           justify-content: center;
-//           align-items: center;
-//           gap: 1rem;
-//         }
-//         .prog-text h4 {
-//           font-family: "Roboto Mono", monospace;
-//         }
-//         .icon {
-//           gap: 2rem;
-//         }
-//         button {
-//           border: none;
-//           background: none;
-//           cursor: pointer;
-//           font-family: "Roboto Mono", monospace;
-//           font-size: 1.1rem;
-//         }
-//         .code {
-//           display: flex;
-//           justify-content: center;
-//           align-items: center;
-//           gap: 5px;
-//         }
-//         h4 {
-//           font-weight: bold;
-//           padding: 5px 1rem;
-//           border-radius: 5px;
-//           font-size: 1.2rem;
-//           color: var(--main-text-color);
-//         }
-//       }
-//     }
+// @keyframes bounce {
+//   0%,
+//   10%,
+//   20%,
+//   50%,
+//   80%,
+//   100% {
+//     transform: translateY(0);
 //   }
-// }
-
-// .project-video {
-//   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-//   max-width: 40rem;
-//   height: 30rem;
-//   border-radius: 20px;
-//   video {
-//     width: 100%;
-//     height: 100%;
-//     object-fit: contain;
-//   }
-// }
-// .hide {
-//   overflow: hidden;
-// }
-// .right-nav-contant {
-//   .box {
-//     display: flex;
-//     align-items: center;
-//     justify-content: flex-end;
-//     padding: 10px 0rem;
-//     gap: 1rem;
-//     font-family: "ADLaM Display", cursive;
-
-//     h4 {
-//       font-size: 1.2rem;
-//       color: var(--main-text-color);
-//     }
-//     svg {
-//       border: 1px solid black;
-//       background-color: var(--white-color);
-//       border-radius: 50%;
-//       cursor: pointer;
-//     }
+//   40%,
+//   60% {
+//     transform: translateY(-15px);
 //   }
 // }
 
-// .title {
-//   text-align: center;
-//   font-size: 2.2rem;
-//   margin-bottom: 2rem;
-//   font-family: "Phudu", cursive;
-//   h2 {
-//     color: var(--main-text-color);
-//   }
-// }
-// .end-title {
-//   font-size: 1.2rem;
-//   margin-top: 5rem;
-//   font-family: "Phudu", cursive;
-//   h2 {
-//     color: var(--main-text-color);
-//   }
+// .yellow {
+//   background-color: white;
 // }
 
-// .toggle {
-//   top: 0;
-//   position: absolute;
-//   font-size: 2rem;
-//   cursor: pointer;
-//   display: none;
-// }
-// .dark {
-//   position: absolute;
-//   top: 0;
-//   right: 50%;
-//   cursor: pointer;
-//   svg {
-//     background-color: #00c3f5;
-//   }
+// .black {
+//   background-color: #000000;
 // }
 
-// .visible {
-//   transform: translateX(-300%);
-//   transition: 1s ease-out;
-//   display: block !important;
-// }
-
-@media screen and (min-width: 892px) {
-  .dark {
-    padding-right: 10rem;
-    right: 0;
-  }
-  .moon {
-    padding: 1rem 0rem;
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 510px) {
-  // .landing {
-  //   min-height: 87vh;
-  // }
-  // .hello {
-  //   font-size: 1.7rem !important;
-  //   text-align: center;
-  // }
-  // .content {
-  //   padding: 2rem !important;
-  // }
-  .toggle {
-    position: absolute;
-    right: 0;
-  }
-}
-@media screen and (max-width: 890px) {
-  .toggle {
-    display: block;
-    right: 0;
-  }
-  .nav {
-    display: none;
-    transform: translateX(0);
-    transition: 1s ease-out;
-  }
-  // .content {
-  //   // padding: 5rem 5rem;
-  //   .hello {
-  //     font-size: 2rem;
-  //     text-align: center;
-  //     flex: 1;
-  //   }
-  // }
-}
-
-// .contact {
-//   padding: 1rem 5rem;
-
-//   h2 {
-//     font-family: "Phudu", cursive;
-
-//     color: var(--main-text-color);
-//     font-size: 3.8rem;
-//     font-weight: bold;
-//     display: inline;
-//     border-bottom: 4px solid #808080;
+// .black-text {
+//   h1,
+//   h2,
+//   h3,
+//   div,
+//   .icons-title,
+//   button {
+//     color: var(--main-text-color) !important;
 //   }
 //   p {
-//     padding: 1.5rem 0rem;
+//     color: var(--dark-text-color);
 //   }
-//   .contact-container {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-//     position: relative;
-//     .contact-information {
-//       position: absolute;
-//       div {
-//         color: #6f6e6c;
-//         font-family: "Roboto Mono";
-//       }
+//   .hello p {
+//     color: var(--light-text-color);
+//   }
+// }
+// .line {
+//   background-color: black;
+// }
+
+// @media screen and (max-width: 1027px) {
+//   .contact {
+//     h2 {
+//       font-size: 1.7rem;
 //     }
-//     form {
-//       display: flex;
+//   }
+//   .about {
+//     padding-right: 0;
+//     .about-container {
 //       flex-direction: column;
-//       width: 100%;
-//       max-width: 37rem;
-//       margin-top: 2rem;
-//       height: 100%;
-//       @media screen and (min-width) {
-//         form {
-//           width: 50%;
+//     }
+//   }
+//   .projects {
+//     padding: 0;
+//     .title {
+//       padding-top: 3rem;
+//       font-size: 1.7rem;
+//     }
+//     .project {
+//       flex-direction: column;
+//       text-align: center;
+//       .project-text {
+//         padding-top: 3rem;
+//         .descripton {
+//           padding: 0 !important;
+//           p {
+//             max-width: none !important;
+//             min-height: auto !important;
+//           }
 //         }
 //       }
 //     }
-//     .message,
-//     textarea {
-//       min-height: 35vh;
-//     }
-//     input,
-//     textarea {
-//       padding: 0.5rem 1rem;
-//       background-color: transparent;
-//       border-width: 2px;
-//       border-radius: 0.375rem;
-//       color: #ffffff;
-//       outline: none;
-//       margin: 8px 0rem;
-//     }
-//     .contact-button {
-//       font-family: "ADLaM Display", cursive;
-//       background-color: var(--main-text-color);
-//       border: none;
-//       color: #ffffff !important;
-//       padding: 0rem 1.5rem;
-//       margin: 2rem auto;
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       border-radius: 10px;
-//       transition: bounce 0.3s ease-in-out;
-//       cursor: pointer;
-//       animation: bounce 1.5s infinite;
-//       padding: 15px;
-//       &:hover {
-//         transform: scale(1.2);
-//       }
+//     .end-title h2 {
+//       font-size: 1.7rem;
+//       padding-bottom: 2rem;
 //     }
 //   }
 // }
-
-@keyframes bounce {
-  0%,
-  10%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40%,
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-.yellow {
-  background-color: white;
-}
-
-.black {
-  background-color: #000000;
-}
-
-.black-text {
-  h1,
-  h2,
-  h3,
-  div,
-  .icons-title,
-  button {
-    color: var(--main-text-color) !important;
-  }
-  p {
-    color: var(--dark-text-color);
-  }
-  .hello p {
-    color: var(--light-text-color);
-  }
-}
-.line {
-  background-color: black;
-}
-
-@media screen and (max-width: 1027px) {
-  .contact {
-    h2 {
-      font-size: 1.7rem;
-    }
-  }
-  .about {
-    padding-right: 0;
-    .about-container {
-      flex-direction: column;
-    }
-  }
-  .projects {
-    padding: 0;
-    .title {
-      padding-top: 3rem;
-      font-size: 1.7rem;
-    }
-    .project {
-      flex-direction: column;
-      text-align: center;
-      .project-text {
-        padding-top: 3rem;
-        .descripton {
-          padding: 0 !important;
-          p {
-            max-width: none !important;
-            min-height: auto !important;
-          }
-        }
-      }
-    }
-    .end-title h2 {
-      font-size: 1.7rem;
-      padding-bottom: 2rem;
-    }
-  }
-}
-@media screen and (max-width: 540px) {
-  .contact-information {
-    font-size: 0.8rem;
-  }
-  .about-container {
-    p {
-      font-size: 0.8rem;
-    }
-  }
-  .about .about-container .box h1 {
-    text-align: center;
-  }
-  .contact {
-    padding: 1rem;
-  }
-}
-
-.text-animate-hover {
-  animation-fill-mode: both;
-  // animation-fill-mode: forwards;
-
-  &:hover {
-    animation: rubberband 1s ease-out;
-  }
-}
-// .more {
-//   display: flex;
-//   flex-direction: column;
-//   margin: 0 auto;
-//   align-items: center;
-//   justify-content: center;
-//   padding: 10px;
-//   border: 1px solid var(--fav-text-color);
-//   border-radius: 12px;
-//   font-family: monospace;
-//   background: transparent;
-//   cursor: pointer;
-//   font-family: "ADLaM Display", cursive;
-
-//   span {
-//     color: var(--main-text-color);
-//     font-family: "Roboto Mono", monospace;
+// @media screen and (max-width: 540px) {
+//   .contact-information {
+//     font-size: 0.8rem;
 //   }
+//   .about-container {
+//     p {
+//       font-size: 0.8rem;
+//     }
+//   }
+//   .about .about-container .box h1 {
+//     text-align: center;
+//   }
+//   .contact {
+//     padding: 1rem;
+//   }
+// }
+
+// .text-animate-hover {
+//   animation-fill-mode: both;
+//   // animation-fill-mode: forwards;
+
 //   &:hover {
-//     background: var(--dark-text-color);
-//     transition: 0.2s ease-out;
+//     animation: rubberband 1s ease-out;
 //   }
 // }
+// // .more {
+// //   display: flex;
+// //   flex-direction: column;
+// //   margin: 0 auto;
+// //   align-items: center;
+// //   justify-content: center;
+// //   padding: 10px;
+// //   border: 1px solid var(--fav-text-color);
+// //   border-radius: 12px;
+// //   font-family: monospace;
+// //   background: transparent;
+// //   cursor: pointer;
+// //   font-family: "ADLaM Display", cursive;
 
-@keyframes rubberband {
-  0% {
-    transform: scaleX(1);
-  }
-  40% {
-    transform: scaleX(1.12) scaleY(0.75);
-  }
-  55% {
-    transform: scaleX(0.85) scaleY(1);
-  }
-  65% {
-    transform: scaleX(1.09) scaleY(0.85);
-  }
-  75% {
-    transform: scaleX(0.9) scaleY(1);
-  }
-  90% {
-    transform: scaleX(1.05) scaleY(0.95);
-  }
-  100% {
-    transform: scaleX(1) scaleY(1);
-  }
-}
+// //   span {
+// //     color: var(--main-text-color);
+// //     font-family: "Roboto Mono", monospace;
+// //   }
+// //   &:hover {
+// //     background: var(--dark-text-color);
+// //     transition: 0.2s ease-out;
+// //   }
+// // }
+
+// // @keyframes rubberband {
+// //   0% {
+// //     transform: scaleX(1);
+// //   }
+// //   40% {
+// //     transform: scaleX(1.12) scaleY(0.75);
+// //   }
+// //   55% {
+// //     transform: scaleX(0.85) scaleY(1);
+// //   }
+// //   65% {
+// //     transform: scaleX(1.09) scaleY(0.85);
+// //   }
+// //   75% {
+// //     transform: scaleX(0.9) scaleY(1);
+// //   }
+// //   90% {
+// //     transform: scaleX(1.05) scaleY(0.95);
+// //   }
+// //   100% {
+// //     transform: scaleX(1) scaleY(1);
+// //   }
+// // }

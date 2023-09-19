@@ -11,12 +11,11 @@ const Nav = ({ turnOn, dark }) => {
   const clickHandler = () => {
     setClick(!click);
   };
-  // ${!turnOn ? "visible" : ""}
 
   return (
     <div
       className={`fixed h-full max-w-[10rem] z-50 bg-[#191919] transition-all duration-100 ease-out 
-        hidden md:block ${dark ? "black" : ""}`}
+        hidden lg:block ${dark ? "black" : ""}`}
     >
       <div className="relative">
         <div className="min-h-[28vh] py-8 px-4 cursor-pointer ">

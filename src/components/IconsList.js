@@ -1,17 +1,20 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { iconLineAnimate } from "../animation";
+import { fromZeroToHero, iconLineAnimate } from "../animation";
 
 const IconsList = ({ data }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { margin: "1px 0px 0px 0px" });
   return (
-    <motion.div className="icons-list  ">
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={isInView ? "show" : "hidden"}
+      variants={fromZeroToHero}
+      className="icons-list"
+    >
       <motion.div className="shadow-2xl  relative">
         <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={isInView ? "show" : "hidden"}
           variants={iconLineAnimate}
           className="w-1 h-1 bg-mainTextColor left-1/2 absolute block"
         ></motion.div>

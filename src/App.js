@@ -1,6 +1,5 @@
 import { AnimatePresence } from "framer-motion";
 import Home from "./pages/Home";
-import "./styles/App.scss";
 import "./components/HoverAnimation";
 import { Route, Routes } from "react-router-dom";
 
