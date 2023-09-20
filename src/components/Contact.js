@@ -22,8 +22,8 @@ const Contact = () => {
         variants={fade}
         className="py-4 px-0 text-center xl:px-20 "
       >
-        <h2 className="font-Phuda title-class  font-bold text-4xl  ">
-          Contact
+        <h2 className="font-Phuda text-mainTextColor text-5xl shadow-inset max-w-md mx-auto py-4 rounded-lg px-6  font-bold shadowMe  ">
+          CONNECT WITH ME
         </h2>
         <p className="py-6 px-0">
           Submit the form below to get in touch with me

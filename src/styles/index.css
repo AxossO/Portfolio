@@ -39,8 +39,15 @@ html::-webkit-scrollbar-track {
   @apply font-Roboto py-4 px-16  border-2 border-mainTextColor rounded-bl-xl rounded-tr-xl text-sm xl:text-lg text-mainTextColor transition-all duration-150 ease-out mt-6 hover:bg-mainTextColor hover:text-white;
 }
 
-.title-class{
-  @apply text-mainTextColor mt-12 xl:mt-0  mx-auto py-[0.8rem] px-8 bg-[#171818] rounded-lg shadow-inset max-w-[15rem]
+.shadowMe {
+  text-shadow: 3px 3px 0 #00c3f5, -1px -1px 0 #00c3f5, 1px -1px 0 #00c3f5,
+    -1px 1px 0 #00c3f5, 1px 1px 0 #00c3f5;
+  -webkit-text-stroke: 0.4px #000;
+  -webkit-text-fill-color: #00c3f5;
+}
+
+.title-class {
+  @apply text-mainTextColor mt-12 xl:mt-0  mx-auto py-[0.8rem] px-8 bg-[#171818] rounded-lg shadow-inset max-w-[15rem];
 }
 
 .prog {
