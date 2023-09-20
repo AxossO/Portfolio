@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { Element } from "react-scroll";
 import { MdLocationPin } from "react-icons/md";
 import { motion, useInView } from "framer-motion";
-import { fade, flip } from "../animation";
+import { fade } from "../animation";
 const Contact = () => {
   const [thereIs] = useState("");
   const checkHandler = (e) => {
@@ -22,15 +22,9 @@ const Contact = () => {
         variants={fade}
         className="py-4 px-0 text-center xl:px-20 "
       >
-        <motion.h2
-          ref={ref}
-          initial="hidden"
-          animate={isInView ? "show" : "hidden"}
-          variants={flip}
-          className="font-Phuda title-class  font-bold text-4xl  "
-        >
+        <h2 className="font-Phuda title-class  font-bold text-4xl  ">
           Contact
-        </motion.h2>
+        </h2>
         <p className="py-6 px-0">
           Submit the form below to get in touch with me
         </p>
