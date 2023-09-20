@@ -19,6 +19,9 @@ module.exports = {
       letterSpacing: {
         toWide: "8px",
       },
+      boxShadow: {
+        inset: "inset 0 0 6px 2px #00c3f5",
+      },
     },
   },
   plugins: [],

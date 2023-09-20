@@ -215,3 +215,17 @@ export const iconLineAnimate = {
     },
   },
 };
+
+export const flip = {
+  hidden: {
+    rotateY: -90,
+    opacity: 1,
+  },
+  show: {
+    opacity: 1,
+    rotateY: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};

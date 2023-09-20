@@ -39,6 +39,10 @@ html::-webkit-scrollbar-track {
   @apply font-Roboto py-4 px-16  border-2 border-mainTextColor rounded-bl-xl rounded-tr-xl text-sm xl:text-lg text-mainTextColor transition-all duration-150 ease-out mt-6 hover:bg-mainTextColor hover:text-white;
 }
 
+.title-class{
+  @apply text-mainTextColor mt-12 xl:mt-0  mx-auto py-[0.8rem] px-8 bg-[#171818] rounded-lg shadow-inset max-w-[15rem]
+}
+
 .prog {
   @apply bg-[#dedadc] h-3 rounded-2xl;
 }

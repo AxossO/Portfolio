@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { Element } from "react-scroll";
 import { MdLocationPin } from "react-icons/md";
 import { motion, useInView } from "framer-motion";
-import { fade } from "../animation";
+import { fade, flip } from "../animation";
 const Contact = () => {
   const [thereIs] = useState("");
   const checkHandler = (e) => {
@@ -20,11 +20,17 @@ const Contact = () => {
         initial="hidden"
         animate={isInView ? "show" : "hidden"}
         variants={fade}
-        className="py-4 px-0 text-center xl:px-20"
+        className="py-4 px-0 text-center xl:px-20 "
       >
-        <h2 className="font-Phuda   text-mainTextColor text-6xl font-bold inline border-b-2 border-[#808080]">
+        <motion.h2
+          ref={ref}
+          initial="hidden"
+          animate={isInView ? "show" : "hidden"}
+          variants={flip}
+          className="font-Phuda title-class  font-bold text-4xl  "
+        >
           Contact
-        </h2>
+        </motion.h2>
         <p className="py-6 px-0">
           Submit the form below to get in touch with me
         </p>
@@ -66,7 +72,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="font-Adlam bg-mainTextColor border-none   px-6 my-8 mx-auto flex justify-center items-center rounded-xl cursor-pointer transition-all animate-bounce p-4 hover:scale-125"
+              className="font-Adlam bg-mainTextColor border-none text-whiteColor  px-6 my-8 mx-auto flex justify-center items-center rounded-xl cursor-pointer transition-all animate-bounce p-4 hover:scale-125"
             >
               Lets talk
             </button>

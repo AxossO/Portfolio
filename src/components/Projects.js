@@ -1,18 +1,27 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { projects } from "../utli";
 import Project from "./Project";
 import { Element } from "react-scroll";
-
+import { motion, useInView } from "framer-motion";
+import { flip } from "../animation";
 const Projects = () => {
   const [projectInfo] = useState(projects);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { margin: "1px 0px 0px 0px" });
   return (
     <Element name="projects">
       <div className=" p-0 xl:p-20 relative">
         <div className="relative">
           <div className="text-center text-4xl mb-8 font-Phuda">
-            <h2 className="text-mainTextColor pt-12 xl:pt-0">
+            <motion.h2
+              ref={ref}
+              initial="hidden"
+              animate={isInView ? "show" : "hidden"}
+              variants={flip}
+              className="title-class"
+            >
               &lt;PROJECTS&gt;
-            </h2>
+            </motion.h2>
           </div>
 
           {projectInfo.map((proj, key) => (
@@ -24,7 +33,7 @@ const Projects = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="more">
+          <button className="more bg-[#171818] rounded-lg shadow-inset">
             More
             <br />
             <span className="text-mainTextColor font-Roboto "> PRESS HERE</span>
