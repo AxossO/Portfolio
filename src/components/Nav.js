@@ -6,8 +6,8 @@ import { AiOutlineMail } from "react-icons/ai";
 import { useState } from "react";
 const Nav = ({ turnOn, dark }) => {
   const [click, setClick] = useState(false);
-  const { scrollYProgress } = useScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
+  // const { scrollYProgress } = useScroll();
+  // const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
   const clickHandler = () => {
     setClick(!click);
   };
@@ -18,23 +18,42 @@ const Nav = ({ turnOn, dark }) => {
         hidden lg:block ${dark ? "black" : ""}`}
     >
       <div className="relative">
-        <div className="min-h-[28vh] py-8 px-4 cursor-pointer ">
+        <div className="min-h-[28vh] py-8 px-4 pr-8 cursor-pointer ">
           <motion.div
             className="logo-container"
             onClick={clickHandler}
             variants={cardVariants}
             animate={click ? "show" : "hidden"}
-            style={{ scale }}
+            // style={{ scale }}
           >
-            How To Center A
-            <span className="font-Adlam flex justify-center items-center text-mainTextColor">
-              Div?
-            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              width="100"
+              viewBox="0 0 375 374.999991"
+              height="100"
+              preserveAspectRatio="xMidYMid meet"
+              version="1.0"
+              className="scale-150 "
+              style={{ boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.3)" }}
+            >
+              <defs>
+                <g />
+              </defs>
+              <g fill={`${dark ? "#00c3f5" : "white"}`} fillOpacity="1">
+                <g transform="translate(98.395632, 261.498446)">
+                  <g>
+                    <path d="M 83.136719 0 C 72.546875 -11.648438 62.484375 -29.390625 56.660156 -48.453125 L 96.109375 -48.453125 C 104.847656 -22.503906 126.027344 1.851562 155.152344 1.851562 C 168.65625 1.851562 185.601562 -3.175781 196.191406 -18.003906 L 191.691406 -22.769531 C 183.21875 -13.769531 169.714844 -14.828125 163.09375 -29.917969 C 152.503906 -54.542969 146.945312 -86.046875 135.558594 -119.9375 C 125.761719 -149.59375 98.492188 -180.835938 45.011719 -180.835938 L 45.011719 -173.949219 C 56.925781 -173.949219 61.691406 -162.566406 68.574219 -140.324219 C 61.691406 -131.851562 54.277344 -122.320312 48.453125 -113.320312 C 30.710938 -86.3125 4.765625 -38.125 4.765625 0 Z M 93.992188 -54.804688 L 55.070312 -54.804688 C 49.246094 -77.3125 49.511719 -101.40625 61.425781 -119.410156 C 64.601562 -124.175781 67.78125 -128.410156 70.957031 -132.910156 C 78.636719 -108.023438 86.046875 -79.164062 93.992188 -54.804688 Z M 93.992188 -54.804688 " />
+                  </g>
+                </g>
+              </g>
+            </svg>
           </motion.div>
         </div>
         <div className="py-3 px-0 text-xl text-center">
           <ul className="overflow-hidden  tracking-widest ">
             <Link
+              fill={`${dark ? "#00c3f5" : "white"}`}
               activeClass="active"
               to="home"
               spy={true}

@@ -47,7 +47,7 @@ html::-webkit-scrollbar-track {
 }
 
 .title-class {
-  @apply text-mainTextColor mt-12 xl:mt-0  mx-auto py-[0.8rem] px-8 bg-[#171818] rounded-lg shadow-inset max-w-[15rem];
+  @apply text-mainTextColor mt-12 xl:mt-0  mx-auto py-[0.8rem]   rounded-lg shadow-inset max-w-[15rem];
 }
 
 .prog {

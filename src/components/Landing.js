@@ -11,7 +11,7 @@ const Landing = ({ setTurnOn, turnOn, setDark, dark }) => {
 
   return (
     <Element name="home">
-      <motion.div className="min-h-[87vh]   xl:min-h-screen flex items-center xl:pl-6 relative">
+      <motion.div className="sm:min-h-[87vh] min-h-screen   xl:min-h-screen flex items-center xl:pl-6 relative">
         <DarkMode turnOn={turnOn} setTurnOn={setTurnOn} dark={dark} />
         <div
           className="top-0 absolute text-4xl cursor-pointer hidden"

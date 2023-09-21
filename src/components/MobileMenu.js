@@ -14,7 +14,7 @@ const MobileMenu = ({ dark, setDark, turnOn }) => {
     <motion.div
       className={`${
         dark ? "yellow" : "black"
-      } xl:hidden transition-all shadow-2xl rounded-b-3xl duration-200 ease-out mobile-menu  z-20 overflow-hidden pt-12 bg-black  w-full pl-0 h-[40vh]  top-0 fixed `}
+      } lg:hidden transition-all shadow-2xl rounded-b-3xl duration-200 ease-out mobile-menu  z-20 overflow-hidden pt-12 bg-black  w-full pl-0 h-[40vh]  top-0 fixed `}
       initial="hidden"
       animate={turnOn ? "show" : "hidden"}
       variants={fade}
@@ -27,7 +27,7 @@ const MobileMenu = ({ dark, setDark, turnOn }) => {
           className={`${dark ? "fill-black" : ""} w-8 h-6 ml-4 `}
         />
       </div>
-      <div className="py-3 px-0 text-xl z-40 absolute  w-full flex flex-col text-center items-center justify-cente">
+      <div className=" py-3 px-0 text-xl z-40 absolute  w-full flex flex-col text-center items-center justify-cente">
         <ul className="overflow-hidden w-full pt-6  tracking-widest ">
           <Link
             activeClass="active"
