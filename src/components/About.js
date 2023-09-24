@@ -12,7 +12,7 @@ const About = ({ dark }) => {
 
   return (
     <Element name="about">
-      <motion.div className="min-h-[60vh] relative py-0 p-0 xl:pr-40 ">
+      <motion.div className="min-h-[60vh] relative py-0 p-0 xl:pr-40 overflow-x-hidden ">
         <motion.div className="flex flex-col xl:flex-row space-y-10 xl-space-y-0  text-center xl:text-left ">
           <motion.div
             ref={ref}

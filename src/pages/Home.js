@@ -21,7 +21,7 @@ const Home = () => {
     >
       <div className="flex">
         <Nav setTurnOn={setTurnOn} turnOn={turnOn} dark={dark} />
-        <MobileMenu   turnOn={turnOn} dark={dark} setDark={setDark} />
+        <MobileMenu turnOn={turnOn} dark={dark} setDark={setDark} />
         <div
           className={`content p-2 md:p-5 w-full  lg:pl-[11.5rem] ${
             dark ? "black-text" : ""
@@ -33,7 +33,7 @@ const Home = () => {
             dark={dark}
             setDark={setDark}
           />
-          <About dark={dark} />
+          <About dark={dark} className=" overflow-x-hidden" />
           <Projects />
           <Contact />
         </div>
