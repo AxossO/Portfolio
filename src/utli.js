@@ -1,6 +1,9 @@
 import capture from "./imgs/Capture_1.mp4";
 import ignite from "./imgs/IgniteVid.mp4";
 import musicPlayer from "./imgs/Music Player_1.mp4";
+import capturePoster from "./imgs/CapturePoster.jpg";
+import IgnitePoster from "./imgs/IgnitePoster.jpg";
+import MusicPlayerPoster from "./imgs/MusicPlayerPoster.jpg";
 
 export const Utli = () => {
   return [
@@ -67,6 +70,7 @@ export const projects = () => {
       progLang2: "Scss",
       code: "https://github.com/AxossO/Capture-Project.git",
       liveDemo: "https://axosso.github.io/Capture-Project/",
+      poster: capturePoster,
     },
     {
       title: "Ignite",
@@ -77,6 +81,7 @@ export const projects = () => {
       progLang2: "Scss",
       code: "https://github.com/AxossO/React-Ignite.git",
       liveDemo: "https://axosso.github.io/React-Ignite/",
+      poster: IgnitePoster,
     },
     {
       title: "Music Player",
@@ -87,6 +92,7 @@ export const projects = () => {
       progLang2: "Scss",
       code: "https://github.com/AxossO/music-player-react.git",
       liveDemo: "https://axosso.github.io/music-player-react/",
+      poster: MusicPlayerPoster,
     },
   ];
 };

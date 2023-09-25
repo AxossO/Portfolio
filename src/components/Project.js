@@ -35,6 +35,7 @@ const Project = ({ proj }) => {
           muted
           playsInline
           controls={false}
+          poster={proj.poster}
         >
           <source src={proj.imgs} type="video/mp4" />
         </video>
