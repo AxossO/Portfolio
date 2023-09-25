@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        mobile: { max: "523px" },
+      },
       colors: {
         mainTextColor: "#00c3f5",
         lightBlackTextColor: "black",

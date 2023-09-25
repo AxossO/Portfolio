@@ -12,14 +12,14 @@ const About = ({ dark }) => {
 
   return (
     <Element name="about">
-      <motion.div className="min-h-[60vh] relative py-0 p-0 xl:pr-40 overflow-x-hidden ">
-        <motion.div className="flex flex-col xl:flex-row space-y-10 xl-space-y-0  text-center xl:text-left ">
+      <motion.div className="min-h-[60vh] sm:mt-16 relative py-0 p-0 xl:pr-40 overflow-x-hidden ">
+        <motion.div className="flex flex-col mobile:flex-col-reverse  xl:flex-row space-y-10 xl-space-y-0  text-center xl:text-left ">
           <motion.div
             ref={ref}
             initial="hidden"
             animate={isInView ? "show" : "hidden"}
             variants={toRight}
-            className="basis-[45%] flex flex-wrap justify-between  items-center px-4 xl:px-0 "
+            className="basis-[45%] flex flex-wrap justify-between  items-center px-4 xl:px-0 mobile:my-20 mobile:!translate-y-0 "
           >
             <h1 className="pb-4 xl:text-6xl text-5xl text-mainTextColor mx-auto xl:mx-0">
               ABOUT ME
@@ -59,70 +59,12 @@ const About = ({ dark }) => {
             initial="hidden"
             animate={isInView ? "show" : "hidden"}
             variants={toLeft}
-            className="flex-1"
+            className="flex-1  mobile:!translate-y-0  "
           >
             <CompImage />
           </motion.div>
-          {/* <div className="flex-1">
-            <div className="py-8 px-4 f font-Roboto">
-              <h2 className="text-2xl pl-1">HTML</h2>
-              <motion.div className="prog">
-                <motion.div
-                  variants={lineSkillsAnimate}
-                  ref={ref}
-                  initial="hidden"
-                  animate={isInView ? "show" : "hidden"}
-                  style={{ width: "90%" }}
-                  data-progress="90%"
-                  className="line"
-                ></motion.div>
-              </motion.div>
-            </div>
-            <div className="py-8 px-4 f font-Roboto">
-              <h2 className="text-2xl pl-1">CSS</h2>
-              <div className="prog">
-                <motion.div
-                  ref={ref}
-                  initial="hidden"
-                  animate={isInView ? "show" : "hidden"}
-                  variants={lineSkillsAnimate}
-                  style={{ width: "90%" }}
-                  data-progress="90%"
-                  className="line"
-                ></motion.div>
-              </div>
-            </div>
-            <div className="py-8 px-4 f font-Roboto">
-              <h2 className="text-2xl pl-1">Javascript</h2>
-              <div className="prog">
-                <motion.div
-                  ref={ref}
-                  initial="hidden"
-                  animate={isInView ? "show" : "hidden"}
-                  variants={lineSkillsAnimate}
-                  style={{ width: "70%" }}
-                  data-progress="70%"
-                  className="line"
-                ></motion.div>
-              </div>
-            </div>
-            <div className="py-8 px-4 f font-Roboto">
-              <h2 className="text-2xl pl-1">React</h2>
-              <div className="prog">
-                <motion.div
-                  ref={ref}
-                  initial="hidden"
-                  animate={isInView ? "show" : "hidden"}
-                  variants={lineSkillsAnimate}
-                  style={{ width: "65%" }}
-                  data-progress="65%"
-                  className="line"
-                ></motion.div>
-              </div>
-            </div>
-          </div> */}
         </motion.div>
-        <div className="icons-list">
+        <div className="icons-list mobile:pt-0">
           {data.map((data, key) => (
             <IconsList key={key} data={data} />
           ))}

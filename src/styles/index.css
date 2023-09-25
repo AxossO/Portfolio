@@ -8,6 +8,11 @@
   box-sizing: border-box;
   color: white;
 }
+html,
+body,
+#root {
+  overflow-x: hidden;
+}
 html::-webkit-scrollbar {
   width: 0.5rem;
 }

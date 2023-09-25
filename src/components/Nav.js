@@ -48,6 +48,13 @@ const Nav = ({ turnOn, dark }) => {
                 </g>
               </g>
             </svg>
+            <div className="text-center">
+              <span className="tracking-wide font-mono font-bold ">Ahmad</span>{" "}
+              <br />
+              <span className="text-sm tracking-tighter font-mono text-[#67696a]">
+                Web Developer
+              </span>
+            </div>
           </motion.div>
         </div>
         <div className="py-3 px-0 text-xl text-center">

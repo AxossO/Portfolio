@@ -25,7 +25,7 @@ const Project = ({ proj }) => {
       className="flex mb-20 justify-center flex-col-reverse text-center xl:text-left xl:flex-row"
     >
       <div
-        className="shadow-2xl max-w-2xl m-auto xl:h-[30rem] pt-14 xl:pt-0 rounded-3xl"
+        className="shadow-2xl max-w-2xl mx-auto xl:mx-0 xl:h-[30rem] pt-14 xl:pt-0 rounded-3xl"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -33,17 +33,18 @@ const Project = ({ proj }) => {
           className="w-full h-full  object-contain"
           ref={videoRef}
           muted
+          playsInline
           controls={false}
         >
           <source src={proj.imgs} type="video/mp4" />
         </video>
       </div>
       <div className="font-Roboto pt-12 xl:pt-0">
-        <h3 className="py-0 px-8 text-mainTextColor mb-4 text-xl">
+        <h3 className="py-0 px-8 text-mainTextColor text-center mb-4 text-xl">
           {proj.title}
         </h3>
         <div className="p-0 xl:pl-8">
-          <p className="max-w-lg px-6 xl:px-0 h-auto xl:max-w-[15rem] mx-auto my-0 text-base xl:min-h-[150%] leading-[150%]   tracking-[1px] font-Inter">
+          <p className="max-w-lg px-6 xl:px-0 h-auto xl:max-w-[15rem]  mx-auto my-0 text-base xl:min-h-[150%] leading-[150%]   tracking-[1px] font-Inter">
             {proj.description}
           </p>
         </div>

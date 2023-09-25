@@ -157,7 +157,7 @@ export const aboutAnime = {
 
 export const toRight = {
   hidden: {
-    opacity: 0,
+    opacity: 1,
     x: -500,
   },
   show: {
